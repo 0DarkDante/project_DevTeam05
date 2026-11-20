@@ -1,0 +1,10 @@
+import './api.js';
+import './header.js';
+import './mobile-menu.js';
+import './hero.js';
+import './books.js';
+import './feedbacks.js';
+import './events.js';
+import './footer.js';
+import './book-modal.js';
+import './contact-modal.js';

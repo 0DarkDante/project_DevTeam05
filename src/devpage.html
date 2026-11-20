@@ -1,0 +1,937 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Booksy — Dev Page</title>
+    <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/devpage.css" />
+  </head>
+  <body>
+    <header class="dev-header">
+      <div class="container">
+        <svg
+          class="dev-header__logo"
+          width="84"
+          height="21"
+          aria-label="Booksy"
+        >
+          <use href="./img/icons.svg#icon-logo"></use>
+        </svg>
+        <h1 class="dev-header__title">UI Elements</h1>
+        <p class="dev-header__text">
+          Сторінка компонентів проєкту. Усі стилі компонентів лежать у
+          css/components і вже підключені в styles.css, тож розмітку звідси
+          можна копіювати в секції без додаткових підключень. Стани hover, focus
+          і active перевіряй наведенням, Tab і натисканням.
+        </p>
+        <nav class="dev-nav" aria-label="Розділи сторінки">
+          <a class="link" href="#colors">Colors</a>
+          <a class="link" href="#typography">Typography</a>
+          <a class="link" href="#buttons">Buttons</a>
+          <a class="link" href="#links">Links</a>
+          <a class="link" href="#inputs">Inputs</a>
+          <a class="link" href="#arrows">Arrows</a>
+          <a class="link" href="#icons">Icons</a>
+          <a class="link" href="#images">Images</a>
+          <a class="link" href="./index.html">На головну</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="dev-section" id="colors">
+        <div class="container">
+          <h2 class="dev-section__title">Colors</h2>
+          <p class="dev-section__text">CSS-змінні з css/base.css.</p>
+          <ul class="dev-colors">
+            <li>
+              <div
+                class="dev-color__swatch"
+                style="background-color: var(--color-neutral-darkest)"
+              ></div>
+              <p class="dev-color__name">--color-neutral-darkest</p>
+              <p class="dev-color__value">#0b0500</p>
+            </li>
+            <li>
+              <div
+                class="dev-color__swatch"
+                style="background-color: var(--color-white)"
+              ></div>
+              <p class="dev-color__name">--color-white</p>
+              <p class="dev-color__value">#ffffff</p>
+            </li>
+            <li>
+              <div
+                class="dev-color__swatch"
+                style="background-color: var(--color-background)"
+              ></div>
+              <p class="dev-color__name">--color-background</p>
+              <p class="dev-color__value">#fceee6</p>
+            </li>
+            <li>
+              <div
+                class="dev-color__swatch"
+                style="background-color: var(--color-bamboo)"
+              ></div>
+              <p class="dev-color__name">--color-bamboo</p>
+              <p class="dev-color__value">#e15d05</p>
+            </li>
+            <li>
+              <div
+                class="dev-color__swatch"
+                style="background-color: var(--color-bamboo-light)"
+              ></div>
+              <p class="dev-color__name">--color-bamboo-light</p>
+              <p class="dev-color__value">#ea8d50</p>
+            </li>
+            <li>
+              <div
+                class="dev-color__swatch"
+                style="background-color: var(--color-bamboo-dark)"
+              ></div>
+              <p class="dev-color__name">--color-bamboo-dark</p>
+              <p class="dev-color__value">#b44a04</p>
+            </li>
+            <li>
+              <div
+                class="dev-color__swatch"
+                style="background-color: var(--color-bamboo-darker)"
+              ></div>
+              <p class="dev-color__name">--color-bamboo-darker</p>
+              <p class="dev-color__value">#5a2502</p>
+            </li>
+            <li>
+              <div
+                class="dev-color__swatch"
+                style="background-color: var(--color-neutral-lighter)"
+              ></div>
+              <p class="dev-color__name">--color-neutral-lighter</p>
+              <p class="dev-color__value">#dad9d8</p>
+            </li>
+            <li>
+              <div
+                class="dev-color__swatch"
+                style="background-color: var(--color-error)"
+              ></div>
+              <p class="dev-color__name">--color-error</p>
+              <p class="dev-color__value">#ad0000</p>
+            </li>
+            <li>
+              <div
+                class="dev-color__swatch"
+                style="background-color: var(--color-neutral-darkest-60)"
+              ></div>
+              <p class="dev-color__name">--color-neutral-darkest-60</p>
+              <p class="dev-color__value">rgba(11, 5, 0, 0.6)</p>
+            </li>
+            <li>
+              <div
+                class="dev-color__swatch"
+                style="background-color: var(--color-neutral-darkest-50)"
+              ></div>
+              <p class="dev-color__name">--color-neutral-darkest-50</p>
+              <p class="dev-color__value">rgba(11, 5, 0, 0.5)</p>
+            </li>
+            <li>
+              <div
+                class="dev-color__swatch"
+                style="background-color: var(--color-neutral-darkest-15)"
+              ></div>
+              <p class="dev-color__name">--color-neutral-darkest-15</p>
+              <p class="dev-color__value">rgba(11, 5, 0, 0.15)</p>
+            </li>
+            <li>
+              <div
+                class="dev-color__swatch"
+                style="background-color: var(--color-neutral-darkest-5)"
+              ></div>
+              <p class="dev-color__name">--color-neutral-darkest-5</p>
+              <p class="dev-color__value">rgba(11, 5, 0, 0.05)</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="dev-section" id="typography">
+        <div class="container">
+          <h2 class="dev-section__title">Typography</h2>
+          <p class="dev-section__text">
+            Шрифт Rubik, ваги 400 і 600. Розміри десктопні, з макета.
+          </p>
+          <div class="dev-box">
+            <div class="dev-type__item">
+              <span class="dev-label">Display xxl · 52 / 600 / 1.2 / -1%</span>
+              <p class="dev-type--xxl">Discover Your Next Great Read</p>
+            </div>
+            <div class="dev-type__item">
+              <span class="dev-label">Display xl · 48 / 600 / 1.2 / -1%</span>
+              <p class="dev-type--xl">Customer Feedbacks</p>
+            </div>
+            <div class="dev-type__item">
+              <span class="dev-label">Display lg · 40 / 600 / 1.2 / -1%</span>
+              <p class="dev-type--lg">Upcoming Events at Booksy</p>
+            </div>
+            <div class="dev-type__item">
+              <span class="dev-label">Display md · 32 / 600 / 1.3 / -1%</span>
+              <p class="dev-type--md">How to find us</p>
+            </div>
+            <div class="dev-type__item">
+              <span class="dev-label">Display sm · 24 / 400 / 1.4 / -1%</span>
+              <p class="dev-type--sm">Event title heading</p>
+            </div>
+            <div class="dev-type__item">
+              <span class="dev-label">Display xs · 20 / 400 / 1.4 / -1%</span>
+              <p class="dev-type--xs">Display xs text</p>
+            </div>
+            <div class="dev-type__item">
+              <span class="dev-label"
+                >Text large semibold · 20 / 600 / 1.5</span
+              >
+              <p class="dev-type--large-semibold">$15</p>
+            </div>
+            <div class="dev-type__item">
+              <span class="dev-label">Text medium · 18 / 400 / 1.5</span>
+              <p class="dev-type--medium">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+            <div class="dev-type__item">
+              <span class="dev-label">Text regular · 16 / 400 / 1.5</span>
+              <p class="dev-type--regular">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+            <div class="dev-type__item">
+              <span class="dev-label">Tagline · 16 / 600 / 1.5</span>
+              <p class="dev-type--tagline">Tagline</p>
+            </div>
+            <div class="dev-type__item">
+              <span class="dev-label">Text small · 14 / 400 / 1.5</span>
+              <p class="dev-type--small">Novel</p>
+            </div>
+            <div class="dev-type__item">
+              <span class="dev-label">Text tiny · 12 / 400 / 1.5</span>
+              <p class="dev-type--tiny">Error text</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="dev-section" id="buttons">
+        <div class="container">
+          <h2 class="dev-section__title">Buttons</h2>
+          <p class="dev-section__text">
+            css/components/button.css. Працює і для button, і для a. Стани:
+            hover/focus, active, disabled.
+          </p>
+
+          <div class="dev-group">
+            <h3 class="dev-subtitle">Primary</h3>
+            <div class="dev-box">
+              <div class="dev-row">
+                <button class="btn btn--primary" type="button">Button</button>
+                <button class="btn btn--primary btn--small" type="button">
+                  Button
+                </button>
+                <button class="btn btn--primary" type="button" disabled>
+                  Button
+                </button>
+                <button
+                  class="btn btn--primary btn--small"
+                  type="button"
+                  disabled
+                >
+                  Button
+                </button>
+                <a class="btn btn--primary" href="#buttons">Shop Now!</a>
+              </div>
+            </div>
+            <pre
+              class="dev-code"
+            ><code>&lt;button class="btn btn--primary" type="button"&gt;Button&lt;/button&gt;
+&lt;button class="btn btn--primary btn--small" type="button"&gt;Button&lt;/button&gt;
+&lt;a class="btn btn--primary" href="#books"&gt;Shop Now!&lt;/a&gt;</code></pre>
+          </div>
+
+          <div class="dev-group">
+            <h3 class="dev-subtitle">Secondary</h3>
+            <div class="dev-box">
+              <div class="dev-row">
+                <button class="btn btn--secondary" type="button">Button</button>
+                <button class="btn btn--secondary btn--small" type="button">
+                  Button
+                </button>
+                <button class="btn btn--secondary" type="button" disabled>
+                  Button
+                </button>
+                <button
+                  class="btn btn--secondary btn--small"
+                  type="button"
+                  disabled
+                >
+                  Button
+                </button>
+              </div>
+            </div>
+            <pre
+              class="dev-code"
+            ><code>&lt;button class="btn btn--secondary" type="button"&gt;Button&lt;/button&gt;
+&lt;button class="btn btn--secondary btn--small" type="button"&gt;Learn More&lt;/button&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="dev-section" id="links">
+        <div class="container">
+          <h2 class="dev-section__title">Links</h2>
+          <p class="dev-section__text">
+            css/components/link.css. Для a і для button, який виглядає як
+            посилання. Іконка додається через спрайт.
+          </p>
+          <div class="dev-box">
+            <div class="dev-row">
+              <a class="link" href="#links">Link</a>
+              <button class="link" type="button">
+                Register
+                <svg
+                  class="link__icon"
+                  width="24"
+                  height="24"
+                  aria-hidden="true"
+                >
+                  <use href="./img/icons.svg#icon-chevron-right"></use>
+                </svg>
+              </button>
+              <button class="link" type="button" disabled>Link</button>
+            </div>
+          </div>
+          <pre
+            class="dev-code"
+          ><code>&lt;a class="link" href="#books"&gt;Books&lt;/a&gt;
+
+&lt;button class="link" type="button"&gt;
+  Register
+  &lt;svg class="link__icon" width="24" height="24" aria-hidden="true"&gt;
+    &lt;use href="./img/icons.svg#icon-chevron-right"&gt;&lt;/use&gt;
+  &lt;/svg&gt;
+&lt;/button&gt;</code></pre>
+        </div>
+      </section>
+
+      <section class="dev-section" id="inputs">
+        <div class="container">
+          <h2 class="dev-section__title">Inputs</h2>
+          <p class="dev-section__text">
+            css/components/field.css. Стан помилки вмикається класом
+            field--error на обгортці.
+          </p>
+
+          <div class="dev-group">
+            <h3 class="dev-subtitle">Text Input</h3>
+            <div class="dev-box">
+              <div class="dev-grid dev-grid--2">
+                <label class="field">
+                  <span class="visually-hidden">Email</span>
+                  <input
+                    class="field__input"
+                    type="email"
+                    name="dev-email"
+                    placeholder="Placeholder"
+                  />
+                </label>
+                <label class="field">
+                  <span class="visually-hidden">Name</span>
+                  <input
+                    class="field__input"
+                    type="text"
+                    name="dev-name"
+                    value="Placeholder"
+                  />
+                </label>
+                <label class="field field--error">
+                  <span class="visually-hidden">Email</span>
+                  <input
+                    class="field__input"
+                    type="email"
+                    name="dev-email-error"
+                    placeholder="Placeholder"
+                    aria-describedby="dev-input-error"
+                    aria-invalid="true"
+                  />
+                  <span class="field__error" id="dev-input-error"
+                    >Error text</span
+                  >
+                </label>
+              </div>
+            </div>
+            <pre class="dev-code"><code>&lt;label class="field"&gt;
+  &lt;span class="visually-hidden"&gt;Email&lt;/span&gt;
+  &lt;input class="field__input" type="email" name="email" placeholder="Email" /&gt;
+&lt;/label&gt;
+
+&lt;label class="field field--error"&gt;
+  &lt;span class="visually-hidden"&gt;Email&lt;/span&gt;
+  &lt;input class="field__input" type="email" name="email" placeholder="Email" /&gt;
+  &lt;span class="field__error"&gt;Error text&lt;/span&gt;
+&lt;/label&gt;</code></pre>
+          </div>
+
+          <div class="dev-group">
+            <h3 class="dev-subtitle">Text Area</h3>
+            <div class="dev-box">
+              <div class="dev-grid dev-grid--2">
+                <label class="field">
+                  <span class="visually-hidden">Message</span>
+                  <textarea
+                    class="field__textarea"
+                    name="dev-message"
+                    placeholder="Type your message..."
+                  ></textarea>
+                </label>
+                <label class="field field--error">
+                  <span class="visually-hidden">Message</span>
+                  <textarea
+                    class="field__textarea"
+                    name="dev-message-error"
+                    placeholder="Type your message..."
+                    aria-describedby="dev-textarea-error"
+                    aria-invalid="true"
+                  ></textarea>
+                  <span class="field__error" id="dev-textarea-error"
+                    >Error text</span
+                  >
+                </label>
+              </div>
+            </div>
+            <pre class="dev-code"><code>&lt;label class="field"&gt;
+  &lt;span class="visually-hidden"&gt;Message&lt;/span&gt;
+  &lt;textarea class="field__textarea" name="message" placeholder="Type your message..."&gt;&lt;/textarea&gt;
+&lt;/label&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="dev-section" id="arrows">
+        <div class="container">
+          <h2 class="dev-section__title">Arrows</h2>
+          <p class="dev-section__text">
+            css/components/arrow-btn.css. Кнопки слайдерів і scroll up.
+            Неактивний стан через атрибут disabled.
+          </p>
+          <div class="dev-box">
+            <div class="dev-row">
+              <button
+                class="arrow-btn"
+                type="button"
+                aria-label="Previous slide"
+              >
+                <svg
+                  class="arrow-btn__icon"
+                  width="24"
+                  height="24"
+                  aria-hidden="true"
+                >
+                  <use href="./img/icons.svg#icon-arrow-left"></use>
+                </svg>
+              </button>
+              <button class="arrow-btn" type="button" aria-label="Next slide">
+                <svg
+                  class="arrow-btn__icon"
+                  width="24"
+                  height="24"
+                  aria-hidden="true"
+                >
+                  <use href="./img/icons.svg#icon-arrow-right"></use>
+                </svg>
+              </button>
+              <button
+                class="arrow-btn"
+                type="button"
+                aria-label="Scroll to top"
+              >
+                <svg
+                  class="arrow-btn__icon"
+                  width="24"
+                  height="24"
+                  aria-hidden="true"
+                >
+                  <use href="./img/icons.svg#icon-arrow-up"></use>
+                </svg>
+              </button>
+              <button
+                class="arrow-btn"
+                type="button"
+                aria-label="Previous slide"
+                disabled
+              >
+                <svg
+                  class="arrow-btn__icon"
+                  width="24"
+                  height="24"
+                  aria-hidden="true"
+                >
+                  <use href="./img/icons.svg#icon-arrow-left"></use>
+                </svg>
+              </button>
+              <button
+                class="arrow-btn"
+                type="button"
+                aria-label="Next slide"
+                disabled
+              >
+                <svg
+                  class="arrow-btn__icon"
+                  width="24"
+                  height="24"
+                  aria-hidden="true"
+                >
+                  <use href="./img/icons.svg#icon-arrow-right"></use>
+                </svg>
+              </button>
+              <button
+                class="arrow-btn"
+                type="button"
+                aria-label="Scroll to top"
+                disabled
+              >
+                <svg
+                  class="arrow-btn__icon"
+                  width="24"
+                  height="24"
+                  aria-hidden="true"
+                >
+                  <use href="./img/icons.svg#icon-arrow-up"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <pre
+            class="dev-code"
+          ><code>&lt;button class="arrow-btn" type="button" aria-label="Next slide"&gt;
+  &lt;svg class="arrow-btn__icon" width="24" height="24" aria-hidden="true"&gt;
+    &lt;use href="./img/icons.svg#icon-arrow-right"&gt;&lt;/use&gt;
+  &lt;/svg&gt;
+&lt;/button&gt;</code></pre>
+        </div>
+      </section>
+
+      <section class="dev-section" id="icons">
+        <div class="container">
+          <h2 class="dev-section__title">Icons</h2>
+          <p class="dev-section__text">
+            Спрайт img/icons.svg. Колір іконки задається через color, бо
+            всередині fill: currentColor.
+          </p>
+          <ul class="dev-icons">
+            <li class="dev-icon">
+              <svg
+                class="dev-icon__svg"
+                width="24"
+                height="24"
+                aria-hidden="true"
+              >
+                <use href="./img/icons.svg#icon-menu"></use>
+              </svg>
+              icon-menu
+            </li>
+            <li class="dev-icon">
+              <svg
+                class="dev-icon__svg"
+                width="24"
+                height="24"
+                aria-hidden="true"
+              >
+                <use href="./img/icons.svg#icon-close"></use>
+              </svg>
+              icon-close
+            </li>
+            <li class="dev-icon">
+              <svg
+                class="dev-icon__svg"
+                width="24"
+                height="24"
+                aria-hidden="true"
+              >
+                <use href="./img/icons.svg#icon-arrow-left"></use>
+              </svg>
+              icon-arrow-left
+            </li>
+            <li class="dev-icon">
+              <svg
+                class="dev-icon__svg"
+                width="24"
+                height="24"
+                aria-hidden="true"
+              >
+                <use href="./img/icons.svg#icon-arrow-right"></use>
+              </svg>
+              icon-arrow-right
+            </li>
+            <li class="dev-icon">
+              <svg
+                class="dev-icon__svg"
+                width="24"
+                height="24"
+                aria-hidden="true"
+              >
+                <use href="./img/icons.svg#icon-arrow-up"></use>
+              </svg>
+              icon-arrow-up
+            </li>
+            <li class="dev-icon">
+              <svg
+                class="dev-icon__svg"
+                width="24"
+                height="24"
+                aria-hidden="true"
+              >
+                <use href="./img/icons.svg#icon-arrow-down"></use>
+              </svg>
+              icon-arrow-down
+            </li>
+            <li class="dev-icon">
+              <svg
+                class="dev-icon__svg"
+                width="24"
+                height="24"
+                aria-hidden="true"
+              >
+                <use href="./img/icons.svg#icon-chevron-left"></use>
+              </svg>
+              icon-chevron-left
+            </li>
+            <li class="dev-icon">
+              <svg
+                class="dev-icon__svg"
+                width="24"
+                height="24"
+                aria-hidden="true"
+              >
+                <use href="./img/icons.svg#icon-chevron-right"></use>
+              </svg>
+              icon-chevron-right
+            </li>
+            <li class="dev-icon">
+              <svg
+                class="dev-icon__svg"
+                width="24"
+                height="24"
+                aria-hidden="true"
+              >
+                <use href="./img/icons.svg#icon-chevron-up"></use>
+              </svg>
+              icon-chevron-up
+            </li>
+            <li class="dev-icon">
+              <svg
+                class="dev-icon__svg"
+                width="24"
+                height="24"
+                aria-hidden="true"
+              >
+                <use href="./img/icons.svg#icon-chevron-down"></use>
+              </svg>
+              icon-chevron-down
+            </li>
+            <li class="dev-icon">
+              <svg
+                class="dev-icon__svg"
+                width="24"
+                height="24"
+                aria-hidden="true"
+              >
+                <use href="./img/icons.svg#icon-plus"></use>
+              </svg>
+              icon-plus
+            </li>
+            <li class="dev-icon">
+              <svg
+                class="dev-icon__svg"
+                width="24"
+                height="24"
+                aria-hidden="true"
+              >
+                <use href="./img/icons.svg#icon-minus"></use>
+              </svg>
+              icon-minus
+            </li>
+            <li class="dev-icon">
+              <svg
+                class="dev-icon__svg"
+                width="24"
+                height="24"
+                aria-hidden="true"
+              >
+                <use href="./img/icons.svg#icon-check"></use>
+              </svg>
+              icon-check
+            </li>
+            <li class="dev-icon">
+              <svg
+                class="dev-icon__svg"
+                width="24"
+                height="24"
+                aria-hidden="true"
+              >
+                <use href="./img/icons.svg#icon-star"></use>
+              </svg>
+              icon-star
+            </li>
+            <li class="dev-icon">
+              <svg
+                class="dev-icon__svg"
+                width="24"
+                height="24"
+                aria-hidden="true"
+              >
+                <use href="./img/icons.svg#icon-envelope"></use>
+              </svg>
+              icon-envelope
+            </li>
+            <li class="dev-icon">
+              <svg
+                class="dev-icon__svg"
+                width="24"
+                height="24"
+                aria-hidden="true"
+              >
+                <use href="./img/icons.svg#icon-phone"></use>
+              </svg>
+              icon-phone
+            </li>
+            <li class="dev-icon">
+              <svg
+                class="dev-icon__svg"
+                width="24"
+                height="24"
+                aria-hidden="true"
+              >
+                <use href="./img/icons.svg#icon-map"></use>
+              </svg>
+              icon-map
+            </li>
+            <li class="dev-icon">
+              <svg width="84" height="21" aria-hidden="true">
+                <use href="./img/icons.svg#icon-logo"></use>
+              </svg>
+              icon-logo
+            </li>
+          </ul>
+          <pre
+            class="dev-code"
+          ><code>&lt;svg width="24" height="24" aria-hidden="true"&gt;
+  &lt;use href="./img/icons.svg#icon-phone"&gt;&lt;/use&gt;
+&lt;/svg&gt;</code></pre>
+        </div>
+      </section>
+
+      <section class="dev-section" id="images">
+        <div class="container">
+          <h2 class="dev-section__title">Images</h2>
+          <p class="dev-section__text">
+            Усі зображення лежать у img/ у розмірах 1x і 2x, формати webp і jpg
+            (для аватарів webp і png). Webp завжди йде першим source, jpg або
+            png у img як запасний варіант. Обов'язково вказуй width, height і
+            alt.
+          </p>
+
+          <div class="dev-group">
+            <h3 class="dev-subtitle">Різні кадри під екрани (Hero, Article)</h3>
+            <p class="dev-section__text">
+              Для кожного брейкпоінта свій файл: desktop від 1440px, tablet від
+              768px, mobile за замовчуванням. Так само підключається
+              article/article-desktop, -tablet, -mobile. Затемнення банерів
+              робиться в CSS, а не в картинці: banner-1 0%, banner-2 40%,
+              banner-3 20%, banner-4 30% чорного.
+            </p>
+            <div class="dev-box">
+              <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="
+                    ./img/hero/banner-1-desktop.webp    1x,
+                    ./img/hero/banner-1-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="
+                    ./img/hero/banner-1-desktop.jpg    1x,
+                    ./img/hero/banner-1-desktop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/hero/banner-1-tablet.webp    1x,
+                    ./img/hero/banner-1-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/hero/banner-1-tablet.jpg    1x,
+                    ./img/hero/banner-1-tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  srcset="
+                    ./img/hero/banner-1-mobile.webp    1x,
+                    ./img/hero/banner-1-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="dev-image"
+                  src="./img/hero/banner-1-mobile.jpg"
+                  srcset="./img/hero/banner-1-mobile@2x.jpg 2x"
+                  width="343"
+                  height="199"
+                  alt="Cozy reading corner with a book and a cup of tea"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <pre class="dev-code"><code>&lt;picture&gt;
+  &lt;source
+    media="(min-width: 1440px)"
+    srcset="./img/hero/banner-1-desktop.webp 1x, ./img/hero/banner-1-desktop@2x.webp 2x"
+    type="image/webp"
+  /&gt;
+  &lt;source
+    media="(min-width: 1440px)"
+    srcset="./img/hero/banner-1-desktop.jpg 1x, ./img/hero/banner-1-desktop@2x.jpg 2x"
+  /&gt;
+  &lt;source
+    media="(min-width: 768px)"
+    srcset="./img/hero/banner-1-tablet.webp 1x, ./img/hero/banner-1-tablet@2x.webp 2x"
+    type="image/webp"
+  /&gt;
+  &lt;source
+    media="(min-width: 768px)"
+    srcset="./img/hero/banner-1-tablet.jpg 1x, ./img/hero/banner-1-tablet@2x.jpg 2x"
+  /&gt;
+  &lt;source
+    srcset="./img/hero/banner-1-mobile.webp 1x, ./img/hero/banner-1-mobile@2x.webp 2x"
+    type="image/webp"
+  /&gt;
+  &lt;img
+    src="./img/hero/banner-1-mobile.jpg"
+    srcset="./img/hero/banner-1-mobile@2x.jpg 2x"
+    width="343"
+    height="199"
+    alt="Cozy reading corner with a book and a cup of tea"
+  /&gt;
+&lt;/picture&gt;
+
+.banner {
+  position: relative;
+}
+
+.banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: inherit;
+}</code></pre>
+          </div>
+
+          <div class="dev-group">
+            <h3 class="dev-subtitle">Один набір на всі екрани (Events)</h3>
+            <p class="dev-section__text">
+              Один файл на всі брейкпоінти. Картинка має висоту 277px і
+              object-fit: cover, тому підлаштовується під ширину картки.
+            </p>
+            <div class="dev-box">
+              <picture>
+                <source
+                  srcset="
+                    ./img/events/event-1.webp    1x,
+                    ./img/events/event-1@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="dev-image dev-image--event"
+                  src="./img/events/event-1.jpg"
+                  srcset="./img/events/event-1@2x.jpg 2x"
+                  width="422"
+                  height="277"
+                  alt="Book club meeting in a cozy bookstore"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <pre class="dev-code"><code>&lt;picture&gt;
+  &lt;source
+    srcset="./img/events/event-1.webp 1x, ./img/events/event-1@2x.webp 2x"
+    type="image/webp"
+  /&gt;
+  &lt;img
+    src="./img/events/event-1.jpg"
+    srcset="./img/events/event-1@2x.jpg 2x"
+    width="422"
+    height="277"
+    alt="Book club meeting in a cozy bookstore"
+    loading="lazy"
+  /&gt;
+&lt;/picture&gt;</code></pre>
+          </div>
+
+          <div class="dev-group">
+            <h3 class="dev-subtitle">Аватар з прозорістю (Feedbacks)</h3>
+            <p class="dev-section__text">
+              Аватари мають прозорі кути, тому запасний формат png, а не jpg.
+            </p>
+            <div class="dev-box">
+              <picture>
+                <source
+                  srcset="
+                    ./img/feedbacks/avatar-1.webp    1x,
+                    ./img/feedbacks/avatar-1@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="dev-image--avatar"
+                  src="./img/feedbacks/avatar-1.png"
+                  srcset="./img/feedbacks/avatar-1@2x.png 2x"
+                  width="48"
+                  height="48"
+                  alt="Jane Doe"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <pre class="dev-code"><code>&lt;picture&gt;
+  &lt;source
+    srcset="./img/feedbacks/avatar-1.webp 1x, ./img/feedbacks/avatar-1@2x.webp 2x"
+    type="image/webp"
+  /&gt;
+  &lt;img
+    src="./img/feedbacks/avatar-1.png"
+    srcset="./img/feedbacks/avatar-1@2x.png 2x"
+    width="48"
+    height="48"
+    alt="Jane Doe"
+    loading="lazy"
+  /&gt;
+&lt;/picture&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

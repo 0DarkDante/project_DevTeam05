@@ -1,0 +1,39 @@
+.arrow-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  padding: 11px;
+  color: var(--color-white);
+  background-color: var(--color-bamboo);
+  border: 1px solid var(--color-neutral-darkest-15);
+  cursor: pointer;
+  transition:
+    background-color var(--transition),
+    color var(--transition);
+}
+
+.arrow-btn:hover:not(:disabled),
+.arrow-btn:focus-visible {
+  color: var(--color-neutral-darkest);
+  background-color: var(--color-background);
+}
+
+.arrow-btn:active:not(:disabled) {
+  color: var(--color-white);
+  background-color: var(--color-bamboo-darker);
+}
+
+.arrow-btn:disabled {
+  color: var(--color-neutral-darkest);
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
+.arrow-btn__icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}

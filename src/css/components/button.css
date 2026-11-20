@@ -1,0 +1,65 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 23px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition:
+    background-color var(--transition),
+    border-color var(--transition),
+    color var(--transition);
+}
+
+.btn:disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
+.btn--small {
+  padding: 7px 19px;
+}
+
+.btn--primary {
+  color: var(--color-white);
+  background-color: var(--color-bamboo);
+  border-color: var(--color-bamboo);
+}
+
+.btn--primary:hover:not(:disabled),
+.btn--primary:focus-visible {
+  background-color: var(--color-neutral-darkest);
+  border-color: var(--color-neutral-darkest);
+}
+
+.btn--primary:active:not(:disabled) {
+  background-color: var(--color-bamboo-dark);
+  border-color: var(--color-bamboo-dark);
+}
+
+.btn--primary:disabled {
+  background-color: var(--color-neutral-darkest);
+  border-color: var(--color-neutral-darkest);
+}
+
+.btn--secondary {
+  color: var(--color-neutral-darkest);
+  background-color: transparent;
+  border-color: var(--color-neutral-darkest);
+}
+
+.btn--secondary:hover:not(:disabled),
+.btn--secondary:focus-visible {
+  background-color: var(--color-bamboo-light);
+}
+
+.btn--secondary:active:not(:disabled) {
+  background-color: var(--color-neutral-lighter);
+}

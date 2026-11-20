@@ -16,24 +16,24 @@
     <link rel="stylesheet" href="./css/devpage.css" />
   </head>
   <body>
-    <header class="dev-header">
+    <header class="kit-header">
       <div class="container">
         <svg
-          class="dev-header__logo"
+          class="kit-header__logo"
           width="84"
           height="21"
           aria-label="Booksy"
         >
           <use href="./img/icons.svg#icon-logo"></use>
         </svg>
-        <h1 class="dev-header__title">UI Elements</h1>
-        <p class="dev-header__text">
+        <h1 class="kit-header__title display-xxl">UI Elements</h1>
+        <p class="kit-header__text text-medium">
           Сторінка компонентів проєкту. Усі стилі компонентів лежать у
           css/components і вже підключені в styles.css, тож розмітку звідси
           можна копіювати в секції без додаткових підключень. Стани hover, focus
           і active перевіряй наведенням, Tab і натисканням.
         </p>
-        <nav class="dev-nav" aria-label="Розділи сторінки">
+        <nav class="kit-nav" aria-label="Розділи сторінки">
           <a class="link" href="#colors">Colors</a>
           <a class="link" href="#typography">Typography</a>
           <a class="link" href="#buttons">Buttons</a>
@@ -48,196 +48,259 @@
     </header>
 
     <main>
-      <section class="dev-section" id="colors">
+      <section class="kit-section" id="colors">
         <div class="container">
-          <h2 class="dev-section__title">Colors</h2>
-          <p class="dev-section__text">CSS-змінні з css/base.css.</p>
-          <ul class="dev-colors">
-            <li>
+          <h2 class="kit-section__title display-md">Colors</h2>
+          <p class="kit-section__text">CSS-змінні з css/base.css.</p>
+          <ul class="color-list">
+            <li class="color-card">
               <div
-                class="dev-color__swatch"
+                class="color-card__swatch"
                 style="background-color: var(--color-neutral-darkest)"
               ></div>
-              <p class="dev-color__name">--color-neutral-darkest</p>
-              <p class="dev-color__value">#0b0500</p>
+              <p class="color-card__name">--color-neutral-darkest</p>
+              <p class="color-card__value">#0b0500</p>
             </li>
-            <li>
+            <li class="color-card">
               <div
-                class="dev-color__swatch"
+                class="color-card__swatch"
                 style="background-color: var(--color-white)"
               ></div>
-              <p class="dev-color__name">--color-white</p>
-              <p class="dev-color__value">#ffffff</p>
+              <p class="color-card__name">--color-white</p>
+              <p class="color-card__value">#ffffff</p>
             </li>
-            <li>
+            <li class="color-card">
               <div
-                class="dev-color__swatch"
+                class="color-card__swatch"
                 style="background-color: var(--color-background)"
               ></div>
-              <p class="dev-color__name">--color-background</p>
-              <p class="dev-color__value">#fceee6</p>
+              <p class="color-card__name">--color-background</p>
+              <p class="color-card__value">#fceee6</p>
             </li>
-            <li>
+            <li class="color-card">
               <div
-                class="dev-color__swatch"
+                class="color-card__swatch"
                 style="background-color: var(--color-bamboo)"
               ></div>
-              <p class="dev-color__name">--color-bamboo</p>
-              <p class="dev-color__value">#e15d05</p>
+              <p class="color-card__name">--color-bamboo</p>
+              <p class="color-card__value">#e15d05</p>
             </li>
-            <li>
+            <li class="color-card">
               <div
-                class="dev-color__swatch"
+                class="color-card__swatch"
                 style="background-color: var(--color-bamboo-light)"
               ></div>
-              <p class="dev-color__name">--color-bamboo-light</p>
-              <p class="dev-color__value">#ea8d50</p>
+              <p class="color-card__name">--color-bamboo-light</p>
+              <p class="color-card__value">#ea8d50</p>
             </li>
-            <li>
+            <li class="color-card">
               <div
-                class="dev-color__swatch"
+                class="color-card__swatch"
                 style="background-color: var(--color-bamboo-dark)"
               ></div>
-              <p class="dev-color__name">--color-bamboo-dark</p>
-              <p class="dev-color__value">#b44a04</p>
+              <p class="color-card__name">--color-bamboo-dark</p>
+              <p class="color-card__value">#b44a04</p>
             </li>
-            <li>
+            <li class="color-card">
               <div
-                class="dev-color__swatch"
+                class="color-card__swatch"
                 style="background-color: var(--color-bamboo-darker)"
               ></div>
-              <p class="dev-color__name">--color-bamboo-darker</p>
-              <p class="dev-color__value">#5a2502</p>
+              <p class="color-card__name">--color-bamboo-darker</p>
+              <p class="color-card__value">#5a2502</p>
             </li>
-            <li>
+            <li class="color-card">
               <div
-                class="dev-color__swatch"
+                class="color-card__swatch"
                 style="background-color: var(--color-neutral-lighter)"
               ></div>
-              <p class="dev-color__name">--color-neutral-lighter</p>
-              <p class="dev-color__value">#dad9d8</p>
+              <p class="color-card__name">--color-neutral-lighter</p>
+              <p class="color-card__value">#dad9d8</p>
             </li>
-            <li>
+            <li class="color-card">
               <div
-                class="dev-color__swatch"
+                class="color-card__swatch"
                 style="background-color: var(--color-error)"
               ></div>
-              <p class="dev-color__name">--color-error</p>
-              <p class="dev-color__value">#ad0000</p>
+              <p class="color-card__name">--color-error</p>
+              <p class="color-card__value">#ad0000</p>
             </li>
-            <li>
+            <li class="color-card">
               <div
-                class="dev-color__swatch"
+                class="color-card__swatch"
                 style="background-color: var(--color-neutral-darkest-60)"
               ></div>
-              <p class="dev-color__name">--color-neutral-darkest-60</p>
-              <p class="dev-color__value">rgba(11, 5, 0, 0.6)</p>
+              <p class="color-card__name">--color-neutral-darkest-60</p>
+              <p class="color-card__value">rgba(11, 5, 0, 0.6)</p>
             </li>
-            <li>
+            <li class="color-card">
               <div
-                class="dev-color__swatch"
+                class="color-card__swatch"
                 style="background-color: var(--color-neutral-darkest-50)"
               ></div>
-              <p class="dev-color__name">--color-neutral-darkest-50</p>
-              <p class="dev-color__value">rgba(11, 5, 0, 0.5)</p>
+              <p class="color-card__name">--color-neutral-darkest-50</p>
+              <p class="color-card__value">rgba(11, 5, 0, 0.5)</p>
             </li>
-            <li>
+            <li class="color-card">
               <div
-                class="dev-color__swatch"
+                class="color-card__swatch"
                 style="background-color: var(--color-neutral-darkest-15)"
               ></div>
-              <p class="dev-color__name">--color-neutral-darkest-15</p>
-              <p class="dev-color__value">rgba(11, 5, 0, 0.15)</p>
+              <p class="color-card__name">--color-neutral-darkest-15</p>
+              <p class="color-card__value">rgba(11, 5, 0, 0.15)</p>
             </li>
-            <li>
+            <li class="color-card">
               <div
-                class="dev-color__swatch"
+                class="color-card__swatch"
                 style="background-color: var(--color-neutral-darkest-5)"
               ></div>
-              <p class="dev-color__name">--color-neutral-darkest-5</p>
-              <p class="dev-color__value">rgba(11, 5, 0, 0.05)</p>
+              <p class="color-card__name">--color-neutral-darkest-5</p>
+              <p class="color-card__value">rgba(11, 5, 0, 0.05)</p>
             </li>
           </ul>
         </div>
       </section>
 
-      <section class="dev-section" id="typography">
+      <section class="kit-section" id="typography">
         <div class="container">
-          <h2 class="dev-section__title">Typography</h2>
-          <p class="dev-section__text">
-            Шрифт Rubik, ваги 400 і 600. Розміри десктопні, з макета.
+          <h2 class="kit-section__title display-md">Typography</h2>
+          <p class="kit-section__text">
+            css/typography.css, вже підключено в styles.css. Над кожним
+            прикладом вказано клас, який треба додати до тегу, щоб текст мав
+            потрібний вигляд. Класи display-xxl, display-xl і display-lg
+            адаптивні: до 1440px мобільний розмір, з 1440px десктопний. Клас
+            можна поєднувати з класом секції.
           </p>
-          <div class="dev-box">
-            <div class="dev-type__item">
-              <span class="dev-label">Display xxl · 52 / 600 / 1.2 / -1%</span>
-              <p class="dev-type--xxl">Discover Your Next Great Read</p>
+          <div class="kit-preview">
+            <div class="type-sample">
+              <div class="type-sample__meta">
+                <code class="type-sample__class">.display-xxl</code>
+                <span class="type-sample__specs"
+                  >Mobile/Tablet 40 · Desktop 52 · 600 · 1.2 · -1%</span
+                >
+              </div>
+              <p class="display-xxl">Discover Your Next Great Read Today!</p>
             </div>
-            <div class="dev-type__item">
-              <span class="dev-label">Display xl · 48 / 600 / 1.2 / -1%</span>
-              <p class="dev-type--xl">Customer Feedbacks</p>
+            <div class="type-sample">
+              <div class="type-sample__meta">
+                <code class="type-sample__class">.display-xl</code>
+                <span class="type-sample__specs"
+                  >Mobile/Tablet 36 · Desktop 48 · 600 · 1.2 · -1%</span
+                >
+              </div>
+              <p class="display-xl">Customer Feedbacks</p>
             </div>
-            <div class="dev-type__item">
-              <span class="dev-label">Display lg · 40 / 600 / 1.2 / -1%</span>
-              <p class="dev-type--lg">Upcoming Events at Booksy</p>
+            <div class="type-sample">
+              <div class="type-sample__meta">
+                <code class="type-sample__class">.display-lg</code>
+                <span class="type-sample__specs"
+                  >Mobile/Tablet 32 · Desktop 40 · 600 · 1.2 · -1%</span
+                >
+              </div>
+              <p class="display-lg">Upcoming Events at Booksy</p>
             </div>
-            <div class="dev-type__item">
-              <span class="dev-label">Display md · 32 / 600 / 1.3 / -1%</span>
-              <p class="dev-type--md">How to find us</p>
+            <div class="type-sample">
+              <div class="type-sample__meta">
+                <code class="type-sample__class">.display-md</code>
+                <span class="type-sample__specs">32 · 600 · 1.3 · -1%</span>
+              </div>
+              <p class="display-md">How to find us</p>
             </div>
-            <div class="dev-type__item">
-              <span class="dev-label">Display sm · 24 / 400 / 1.4 / -1%</span>
-              <p class="dev-type--sm">Event title heading</p>
+            <div class="type-sample">
+              <div class="type-sample__meta">
+                <code class="type-sample__class">.display-sm</code>
+                <span class="type-sample__specs">24 · 400 · 1.4 · -1%</span>
+              </div>
+              <p class="display-sm">Cozy Book Club — “The Midnight Library”</p>
             </div>
-            <div class="dev-type__item">
-              <span class="dev-label">Display xs · 20 / 400 / 1.4 / -1%</span>
-              <p class="dev-type--xs">Display xs text</p>
+            <div class="type-sample">
+              <div class="type-sample__meta">
+                <code class="type-sample__class">.display-xs</code>
+                <span class="type-sample__specs">20 · 400 · 1.4 · -1%</span>
+              </div>
+              <p class="display-xs">Display xs text</p>
             </div>
-            <div class="dev-type__item">
-              <span class="dev-label"
-                >Text large semibold · 20 / 600 / 1.5</span
-              >
-              <p class="dev-type--large-semibold">$15</p>
+            <div class="type-sample">
+              <div class="type-sample__meta">
+                <code class="type-sample__class">.tagline</code>
+                <span class="type-sample__specs">16 · 600 · 1.5</span>
+              </div>
+              <p class="tagline">Events</p>
             </div>
-            <div class="dev-type__item">
-              <span class="dev-label">Text medium · 18 / 400 / 1.5</span>
-              <p class="dev-type--medium">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <div class="type-sample">
+              <div class="type-sample__meta">
+                <code class="type-sample__class">.text-large-semibold</code>
+                <span class="type-sample__specs">20 · 600 · 1.5</span>
+              </div>
+              <p class="text-large-semibold">$15</p>
+            </div>
+            <div class="type-sample">
+              <div class="type-sample__meta">
+                <code class="type-sample__class">.text-medium</code>
+                <span class="type-sample__specs">18 · 400 · 1.5</span>
+              </div>
+              <p class="text-medium">
+                See what our readers are saying about us!
               </p>
             </div>
-            <div class="dev-type__item">
-              <span class="dev-label">Text regular · 16 / 400 / 1.5</span>
-              <p class="dev-type--regular">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <div class="type-sample">
+              <div class="type-sample__meta">
+                <code class="type-sample__class">.text-medium-semibold</code>
+                <span class="type-sample__specs">18 · 600 · 1.5</span>
+              </div>
+              <p class="text-medium-semibold">I will find you</p>
+            </div>
+            <div class="type-sample">
+              <div class="type-sample__meta">
+                <code class="type-sample__class">.text-regular</code>
+                <span class="type-sample__specs">16 · 400 · 1.5</span>
+              </div>
+              <p class="text-regular">
+                Join us for an evening of tea, thoughtful conversation, and
+                shared reflections.
               </p>
             </div>
-            <div class="dev-type__item">
-              <span class="dev-label">Tagline · 16 / 600 / 1.5</span>
-              <p class="dev-type--tagline">Tagline</p>
+            <div class="type-sample">
+              <div class="type-sample__meta">
+                <code class="type-sample__class">.text-regular-semibold</code>
+                <span class="type-sample__specs">16 · 600 · 1.5</span>
+              </div>
+              <p class="text-regular-semibold">Jane Doe</p>
             </div>
-            <div class="dev-type__item">
-              <span class="dev-label">Text small · 14 / 400 / 1.5</span>
-              <p class="dev-type--small">Novel</p>
+            <div class="type-sample">
+              <div class="type-sample__meta">
+                <code class="type-sample__class">.text-small</code>
+                <span class="type-sample__specs">14 · 400 · 1.5</span>
+              </div>
+              <p class="text-small">Harlan Coben</p>
             </div>
-            <div class="dev-type__item">
-              <span class="dev-label">Text tiny · 12 / 400 / 1.5</span>
-              <p class="dev-type--tiny">Error text</p>
+            <div class="type-sample">
+              <div class="type-sample__meta">
+                <code class="type-sample__class">.text-tiny</code>
+                <span class="type-sample__specs">12 · 400 · 1.5</span>
+              </div>
+              <p class="text-tiny">© 2025 Booksy. All rights reserved.</p>
             </div>
           </div>
+          <pre
+            class="kit-code"
+          ><code>&lt;h1 class="hero__title display-xxl"&gt;Discover Your Next Great Read Today!&lt;/h1&gt;
+&lt;p class="feedbacks__text text-medium"&gt;See what our readers are saying about us!&lt;/p&gt;</code></pre>
         </div>
       </section>
 
-      <section class="dev-section" id="buttons">
+      <section class="kit-section" id="buttons">
         <div class="container">
-          <h2 class="dev-section__title">Buttons</h2>
-          <p class="dev-section__text">
+          <h2 class="kit-section__title display-md">Buttons</h2>
+          <p class="kit-section__text">
             css/components/button.css. Працює і для button, і для a. Стани:
             hover/focus, active, disabled.
           </p>
 
-          <div class="dev-group">
-            <h3 class="dev-subtitle">Primary</h3>
-            <div class="dev-box">
-              <div class="dev-row">
+          <div class="kit-group">
+            <h3 class="kit-section__subtitle text-large-semibold">Primary</h3>
+            <div class="kit-preview">
+              <div class="kit-row">
                 <button class="btn btn--primary" type="button">Button</button>
                 <button class="btn btn--primary btn--small" type="button">
                   Button
@@ -256,16 +319,16 @@
               </div>
             </div>
             <pre
-              class="dev-code"
+              class="kit-code"
             ><code>&lt;button class="btn btn--primary" type="button"&gt;Button&lt;/button&gt;
 &lt;button class="btn btn--primary btn--small" type="button"&gt;Button&lt;/button&gt;
 &lt;a class="btn btn--primary" href="#books"&gt;Shop Now!&lt;/a&gt;</code></pre>
           </div>
 
-          <div class="dev-group">
-            <h3 class="dev-subtitle">Secondary</h3>
-            <div class="dev-box">
-              <div class="dev-row">
+          <div class="kit-group">
+            <h3 class="kit-section__subtitle text-large-semibold">Secondary</h3>
+            <div class="kit-preview">
+              <div class="kit-row">
                 <button class="btn btn--secondary" type="button">Button</button>
                 <button class="btn btn--secondary btn--small" type="button">
                   Button
@@ -283,22 +346,22 @@
               </div>
             </div>
             <pre
-              class="dev-code"
+              class="kit-code"
             ><code>&lt;button class="btn btn--secondary" type="button"&gt;Button&lt;/button&gt;
 &lt;button class="btn btn--secondary btn--small" type="button"&gt;Learn More&lt;/button&gt;</code></pre>
           </div>
         </div>
       </section>
 
-      <section class="dev-section" id="links">
+      <section class="kit-section" id="links">
         <div class="container">
-          <h2 class="dev-section__title">Links</h2>
-          <p class="dev-section__text">
+          <h2 class="kit-section__title display-md">Links</h2>
+          <p class="kit-section__text">
             css/components/link.css. Для a і для button, який виглядає як
             посилання. Іконка додається через спрайт.
           </p>
-          <div class="dev-box">
-            <div class="dev-row">
+          <div class="kit-preview">
+            <div class="kit-row">
               <a class="link" href="#links">Link</a>
               <button class="link" type="button">
                 Register
@@ -315,7 +378,7 @@
             </div>
           </div>
           <pre
-            class="dev-code"
+            class="kit-code"
           ><code>&lt;a class="link" href="#books"&gt;Books&lt;/a&gt;
 
 &lt;button class="link" type="button"&gt;
@@ -327,24 +390,26 @@
         </div>
       </section>
 
-      <section class="dev-section" id="inputs">
+      <section class="kit-section" id="inputs">
         <div class="container">
-          <h2 class="dev-section__title">Inputs</h2>
-          <p class="dev-section__text">
+          <h2 class="kit-section__title display-md">Inputs</h2>
+          <p class="kit-section__text">
             css/components/field.css. Стан помилки вмикається класом
             field--error на обгортці.
           </p>
 
-          <div class="dev-group">
-            <h3 class="dev-subtitle">Text Input</h3>
-            <div class="dev-box">
-              <div class="dev-grid dev-grid--2">
+          <div class="kit-group">
+            <h3 class="kit-section__subtitle text-large-semibold">
+              Text Input
+            </h3>
+            <div class="kit-preview">
+              <div class="kit-grid kit-grid--2">
                 <label class="field">
                   <span class="visually-hidden">Email</span>
                   <input
                     class="field__input"
                     type="email"
-                    name="dev-email"
+                    name="email"
                     placeholder="Placeholder"
                   />
                 </label>
@@ -353,7 +418,7 @@
                   <input
                     class="field__input"
                     type="text"
-                    name="dev-name"
+                    name="name"
                     value="Placeholder"
                   />
                 </label>
@@ -362,18 +427,18 @@
                   <input
                     class="field__input"
                     type="email"
-                    name="dev-email-error"
+                    name="email-error"
                     placeholder="Placeholder"
-                    aria-describedby="dev-input-error"
+                    aria-describedby="email-error-text"
                     aria-invalid="true"
                   />
-                  <span class="field__error" id="dev-input-error"
+                  <span class="field__error" id="email-error-text"
                     >Error text</span
                   >
                 </label>
               </div>
             </div>
-            <pre class="dev-code"><code>&lt;label class="field"&gt;
+            <pre class="kit-code"><code>&lt;label class="field"&gt;
   &lt;span class="visually-hidden"&gt;Email&lt;/span&gt;
   &lt;input class="field__input" type="email" name="email" placeholder="Email" /&gt;
 &lt;/label&gt;
@@ -385,15 +450,15 @@
 &lt;/label&gt;</code></pre>
           </div>
 
-          <div class="dev-group">
-            <h3 class="dev-subtitle">Text Area</h3>
-            <div class="dev-box">
-              <div class="dev-grid dev-grid--2">
+          <div class="kit-group">
+            <h3 class="kit-section__subtitle text-large-semibold">Text Area</h3>
+            <div class="kit-preview">
+              <div class="kit-grid kit-grid--2">
                 <label class="field">
                   <span class="visually-hidden">Message</span>
                   <textarea
                     class="field__textarea"
-                    name="dev-message"
+                    name="message"
                     placeholder="Type your message..."
                   ></textarea>
                 </label>
@@ -401,18 +466,18 @@
                   <span class="visually-hidden">Message</span>
                   <textarea
                     class="field__textarea"
-                    name="dev-message-error"
+                    name="message-error"
                     placeholder="Type your message..."
-                    aria-describedby="dev-textarea-error"
+                    aria-describedby="message-error-text"
                     aria-invalid="true"
                   ></textarea>
-                  <span class="field__error" id="dev-textarea-error"
+                  <span class="field__error" id="message-error-text"
                     >Error text</span
                   >
                 </label>
               </div>
             </div>
-            <pre class="dev-code"><code>&lt;label class="field"&gt;
+            <pre class="kit-code"><code>&lt;label class="field"&gt;
   &lt;span class="visually-hidden"&gt;Message&lt;/span&gt;
   &lt;textarea class="field__textarea" name="message" placeholder="Type your message..."&gt;&lt;/textarea&gt;
 &lt;/label&gt;</code></pre>
@@ -420,15 +485,15 @@
         </div>
       </section>
 
-      <section class="dev-section" id="arrows">
+      <section class="kit-section" id="arrows">
         <div class="container">
-          <h2 class="dev-section__title">Arrows</h2>
-          <p class="dev-section__text">
+          <h2 class="kit-section__title display-md">Arrows</h2>
+          <p class="kit-section__text">
             css/components/arrow-btn.css. Кнопки слайдерів і scroll up.
             Неактивний стан через атрибут disabled.
           </p>
-          <div class="dev-box">
-            <div class="dev-row">
+          <div class="kit-preview">
+            <div class="kit-row">
               <button
                 class="arrow-btn"
                 type="button"
@@ -515,7 +580,7 @@
             </div>
           </div>
           <pre
-            class="dev-code"
+            class="kit-code"
           ><code>&lt;button class="arrow-btn" type="button" aria-label="Next slide"&gt;
   &lt;svg class="arrow-btn__icon" width="24" height="24" aria-hidden="true"&gt;
     &lt;use href="./img/icons.svg#icon-arrow-right"&gt;&lt;/use&gt;
@@ -524,17 +589,17 @@
         </div>
       </section>
 
-      <section class="dev-section" id="icons">
+      <section class="kit-section" id="icons">
         <div class="container">
-          <h2 class="dev-section__title">Icons</h2>
-          <p class="dev-section__text">
+          <h2 class="kit-section__title display-md">Icons</h2>
+          <p class="kit-section__text">
             Спрайт img/icons.svg. Колір іконки задається через color, бо
             всередині fill: currentColor.
           </p>
-          <ul class="dev-icons">
-            <li class="dev-icon">
+          <ul class="icon-list">
+            <li class="icon-card">
               <svg
-                class="dev-icon__svg"
+                class="icon-card__svg"
                 width="24"
                 height="24"
                 aria-hidden="true"
@@ -543,9 +608,9 @@
               </svg>
               icon-menu
             </li>
-            <li class="dev-icon">
+            <li class="icon-card">
               <svg
-                class="dev-icon__svg"
+                class="icon-card__svg"
                 width="24"
                 height="24"
                 aria-hidden="true"
@@ -554,9 +619,9 @@
               </svg>
               icon-close
             </li>
-            <li class="dev-icon">
+            <li class="icon-card">
               <svg
-                class="dev-icon__svg"
+                class="icon-card__svg"
                 width="24"
                 height="24"
                 aria-hidden="true"
@@ -565,9 +630,9 @@
               </svg>
               icon-arrow-left
             </li>
-            <li class="dev-icon">
+            <li class="icon-card">
               <svg
-                class="dev-icon__svg"
+                class="icon-card__svg"
                 width="24"
                 height="24"
                 aria-hidden="true"
@@ -576,9 +641,9 @@
               </svg>
               icon-arrow-right
             </li>
-            <li class="dev-icon">
+            <li class="icon-card">
               <svg
-                class="dev-icon__svg"
+                class="icon-card__svg"
                 width="24"
                 height="24"
                 aria-hidden="true"
@@ -587,9 +652,9 @@
               </svg>
               icon-arrow-up
             </li>
-            <li class="dev-icon">
+            <li class="icon-card">
               <svg
-                class="dev-icon__svg"
+                class="icon-card__svg"
                 width="24"
                 height="24"
                 aria-hidden="true"
@@ -598,9 +663,9 @@
               </svg>
               icon-arrow-down
             </li>
-            <li class="dev-icon">
+            <li class="icon-card">
               <svg
-                class="dev-icon__svg"
+                class="icon-card__svg"
                 width="24"
                 height="24"
                 aria-hidden="true"
@@ -609,9 +674,9 @@
               </svg>
               icon-chevron-left
             </li>
-            <li class="dev-icon">
+            <li class="icon-card">
               <svg
-                class="dev-icon__svg"
+                class="icon-card__svg"
                 width="24"
                 height="24"
                 aria-hidden="true"
@@ -620,9 +685,9 @@
               </svg>
               icon-chevron-right
             </li>
-            <li class="dev-icon">
+            <li class="icon-card">
               <svg
-                class="dev-icon__svg"
+                class="icon-card__svg"
                 width="24"
                 height="24"
                 aria-hidden="true"
@@ -631,9 +696,9 @@
               </svg>
               icon-chevron-up
             </li>
-            <li class="dev-icon">
+            <li class="icon-card">
               <svg
-                class="dev-icon__svg"
+                class="icon-card__svg"
                 width="24"
                 height="24"
                 aria-hidden="true"
@@ -642,9 +707,9 @@
               </svg>
               icon-chevron-down
             </li>
-            <li class="dev-icon">
+            <li class="icon-card">
               <svg
-                class="dev-icon__svg"
+                class="icon-card__svg"
                 width="24"
                 height="24"
                 aria-hidden="true"
@@ -653,9 +718,9 @@
               </svg>
               icon-plus
             </li>
-            <li class="dev-icon">
+            <li class="icon-card">
               <svg
-                class="dev-icon__svg"
+                class="icon-card__svg"
                 width="24"
                 height="24"
                 aria-hidden="true"
@@ -664,9 +729,9 @@
               </svg>
               icon-minus
             </li>
-            <li class="dev-icon">
+            <li class="icon-card">
               <svg
-                class="dev-icon__svg"
+                class="icon-card__svg"
                 width="24"
                 height="24"
                 aria-hidden="true"
@@ -675,9 +740,9 @@
               </svg>
               icon-check
             </li>
-            <li class="dev-icon">
+            <li class="icon-card">
               <svg
-                class="dev-icon__svg"
+                class="icon-card__svg"
                 width="24"
                 height="24"
                 aria-hidden="true"
@@ -686,9 +751,9 @@
               </svg>
               icon-star
             </li>
-            <li class="dev-icon">
+            <li class="icon-card">
               <svg
-                class="dev-icon__svg"
+                class="icon-card__svg"
                 width="24"
                 height="24"
                 aria-hidden="true"
@@ -697,9 +762,9 @@
               </svg>
               icon-envelope
             </li>
-            <li class="dev-icon">
+            <li class="icon-card">
               <svg
-                class="dev-icon__svg"
+                class="icon-card__svg"
                 width="24"
                 height="24"
                 aria-hidden="true"
@@ -708,9 +773,9 @@
               </svg>
               icon-phone
             </li>
-            <li class="dev-icon">
+            <li class="icon-card">
               <svg
-                class="dev-icon__svg"
+                class="icon-card__svg"
                 width="24"
                 height="24"
                 aria-hidden="true"
@@ -719,7 +784,7 @@
               </svg>
               icon-map
             </li>
-            <li class="dev-icon">
+            <li class="icon-card">
               <svg width="84" height="21" aria-hidden="true">
                 <use href="./img/icons.svg#icon-logo"></use>
               </svg>
@@ -727,33 +792,35 @@
             </li>
           </ul>
           <pre
-            class="dev-code"
+            class="kit-code"
           ><code>&lt;svg width="24" height="24" aria-hidden="true"&gt;
   &lt;use href="./img/icons.svg#icon-phone"&gt;&lt;/use&gt;
 &lt;/svg&gt;</code></pre>
         </div>
       </section>
 
-      <section class="dev-section" id="images">
+      <section class="kit-section" id="images">
         <div class="container">
-          <h2 class="dev-section__title">Images</h2>
-          <p class="dev-section__text">
+          <h2 class="kit-section__title display-md">Images</h2>
+          <p class="kit-section__text">
             Усі зображення лежать у img/ у розмірах 1x і 2x, формати webp і jpg
             (для аватарів webp і png). Webp завжди йде першим source, jpg або
             png у img як запасний варіант. Обов'язково вказуй width, height і
             alt.
           </p>
 
-          <div class="dev-group">
-            <h3 class="dev-subtitle">Різні кадри під екрани (Hero, Article)</h3>
-            <p class="dev-section__text">
+          <div class="kit-group">
+            <h3 class="kit-section__subtitle text-large-semibold">
+              Різні кадри під екрани (Hero, Article)
+            </h3>
+            <p class="kit-section__text">
               Для кожного брейкпоінта свій файл: desktop від 1440px, tablet від
               768px, mobile за замовчуванням. Так само підключається
               article/article-desktop, -tablet, -mobile. Затемнення банерів
               робиться в CSS, а не в картинці: banner-1 0%, banner-2 40%,
               banner-3 20%, banner-4 30% чорного.
             </p>
-            <div class="dev-box">
+            <div class="kit-preview">
               <picture>
                 <source
                   media="(min-width: 1440px)"
@@ -793,7 +860,7 @@
                   type="image/webp"
                 />
                 <img
-                  class="dev-image"
+                  class="kit-image"
                   src="./img/hero/banner-1-mobile.jpg"
                   srcset="./img/hero/banner-1-mobile@2x.jpg 2x"
                   width="343"
@@ -803,7 +870,7 @@
                 />
               </picture>
             </div>
-            <pre class="dev-code"><code>&lt;picture&gt;
+            <pre class="kit-code"><code>&lt;picture&gt;
   &lt;source
     media="(min-width: 1440px)"
     srcset="./img/hero/banner-1-desktop.webp 1x, ./img/hero/banner-1-desktop@2x.webp 2x"
@@ -848,13 +915,15 @@
 }</code></pre>
           </div>
 
-          <div class="dev-group">
-            <h3 class="dev-subtitle">Один набір на всі екрани (Events)</h3>
-            <p class="dev-section__text">
+          <div class="kit-group">
+            <h3 class="kit-section__subtitle text-large-semibold">
+              Один набір на всі екрани (Events)
+            </h3>
+            <p class="kit-section__text">
               Один файл на всі брейкпоінти. Картинка має висоту 277px і
               object-fit: cover, тому підлаштовується під ширину картки.
             </p>
-            <div class="dev-box">
+            <div class="kit-preview">
               <picture>
                 <source
                   srcset="
@@ -864,7 +933,7 @@
                   type="image/webp"
                 />
                 <img
-                  class="dev-image dev-image--event"
+                  class="kit-image kit-image--event"
                   src="./img/events/event-1.jpg"
                   srcset="./img/events/event-1@2x.jpg 2x"
                   width="422"
@@ -874,7 +943,7 @@
                 />
               </picture>
             </div>
-            <pre class="dev-code"><code>&lt;picture&gt;
+            <pre class="kit-code"><code>&lt;picture&gt;
   &lt;source
     srcset="./img/events/event-1.webp 1x, ./img/events/event-1@2x.webp 2x"
     type="image/webp"
@@ -890,12 +959,14 @@
 &lt;/picture&gt;</code></pre>
           </div>
 
-          <div class="dev-group">
-            <h3 class="dev-subtitle">Аватар з прозорістю (Feedbacks)</h3>
-            <p class="dev-section__text">
+          <div class="kit-group">
+            <h3 class="kit-section__subtitle text-large-semibold">
+              Аватар з прозорістю (Feedbacks)
+            </h3>
+            <p class="kit-section__text">
               Аватари мають прозорі кути, тому запасний формат png, а не jpg.
             </p>
-            <div class="dev-box">
+            <div class="kit-preview">
               <picture>
                 <source
                   srcset="
@@ -905,7 +976,7 @@
                   type="image/webp"
                 />
                 <img
-                  class="dev-image--avatar"
+                  class="kit-image kit-image--avatar"
                   src="./img/feedbacks/avatar-1.png"
                   srcset="./img/feedbacks/avatar-1@2x.png 2x"
                   width="48"
@@ -915,7 +986,7 @@
                 />
               </picture>
             </div>
-            <pre class="dev-code"><code>&lt;picture&gt;
+            <pre class="kit-code"><code>&lt;picture&gt;
   &lt;source
     srcset="./img/feedbacks/avatar-1.webp 1x, ./img/feedbacks/avatar-1@2x.webp 2x"
     type="image/webp"

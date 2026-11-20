@@ -1,0 +1,102 @@
+.display-xxl,
+.display-xl,
+.display-lg,
+.display-md {
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.display-xxl {
+  font-size: 40px;
+}
+
+.display-xl {
+  font-size: 36px;
+}
+
+.display-lg {
+  font-size: 32px;
+}
+
+.display-md {
+  font-size: 32px;
+  line-height: 1.3;
+}
+
+.display-sm,
+.display-xs {
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
+.display-sm {
+  font-size: 24px;
+}
+
+.display-xs {
+  font-size: 20px;
+}
+
+.tagline {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.text-large-semibold {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.text-medium {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.text-medium-semibold {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.text-regular {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.text-regular-semibold {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.text-small {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.text-tiny {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@media only screen and (min-width: 1440px) {
+  .display-xxl {
+    font-size: 52px;
+  }
+
+  .display-xl {
+    font-size: 48px;
+  }
+
+  .display-lg {
+    font-size: 40px;
+  }
+}

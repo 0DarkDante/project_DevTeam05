@@ -1,13 +1,16 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
+@import 'modern-normalize/modern-normalize.css';
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./container.css');
 
-
-
+@import url('./sections/header.css');
+@import url('./sections/mobile-menu.css');
+@import url('./sections/hero.css');
+@import url('./sections/books.css');
+@import url('./sections/feedbacks.css');
+@import url('./sections/events.css');
+@import url('./sections/article.css');
+@import url('./sections/location.css');
+@import url('./sections/footer.css');
+@import url('./sections/book-modal.css');
+@import url('./sections/contact-modal.css');

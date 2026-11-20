@@ -1,30 +1,41 @@
+@import url('./styles.css');
+
+.is--muted {
+  color: var(--color-neutral-darkest-60);
+}
+
+.is--semibold {
+  font-weight: 600;
+}
+
 .kit-header {
   padding: 32px 0;
   border-bottom: 1px solid var(--color-neutral-darkest-15);
+}
+
+.kit-header__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.kit-header__inner > p {
+  max-width: 720px;
 }
 
 .kit-header__logo {
   display: block;
   width: 84px;
   height: 21px;
-  margin-bottom: 24px;
   color: var(--color-neutral-darkest);
-}
-
-.kit-header__title {
-  margin-bottom: 8px;
-}
-
-.kit-header__text {
-  max-width: 720px;
-  color: var(--color-neutral-darkest-60);
 }
 
 .kit-nav {
   display: flex;
   flex-wrap: wrap;
   gap: 8px 24px;
-  margin-top: 24px;
+  margin-top: 8px;
 }
 
 .kit-section {
@@ -32,21 +43,26 @@
   border-bottom: 1px solid var(--color-neutral-darkest-15);
 }
 
-.kit-section__title {
-  margin-bottom: 8px;
+.kit-section__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
-.kit-section__text {
-  margin-bottom: 24px;
-  color: var(--color-neutral-darkest-60);
+.kit-section__head {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.kit-section__subtitle {
-  margin-bottom: 16px;
+.kit-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .kit-group + .kit-group {
-  margin-top: 32px;
+  margin-top: 16px;
 }
 
 .kit-preview {
@@ -68,7 +84,7 @@
 }
 
 .kit-code {
-  margin: 16px 0 0;
+  margin: 0;
   padding: 16px;
   overflow-x: auto;
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
@@ -91,16 +107,6 @@
   margin-bottom: 8px;
   border: 1px solid var(--color-neutral-darkest-15);
   border-radius: 8px;
-}
-
-.color-card__name {
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.color-card__value {
-  font-size: 12px;
-  color: var(--color-neutral-darkest-60);
 }
 
 .type-sample + .type-sample {
@@ -127,12 +133,6 @@
   border-radius: 4px;
 }
 
-.type-sample__specs {
-  font-size: 12px;
-  line-height: 1.5;
-  color: var(--color-neutral-darkest-60);
-}
-
 .icon-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
@@ -145,7 +145,6 @@
   align-items: center;
   gap: 8px;
   padding: 16px 8px;
-  font-size: 12px;
   text-align: center;
   background-color: var(--color-white);
   border-radius: 8px;

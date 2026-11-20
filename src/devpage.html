@@ -12,12 +12,11 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/devpage.css" />
   </head>
   <body>
     <header class="kit-header">
-      <div class="container">
+      <div class="container kit-header__inner">
         <svg
           class="kit-header__logo"
           width="84"
@@ -26,8 +25,8 @@
         >
           <use href="./img/icons.svg#icon-logo"></use>
         </svg>
-        <h1 class="kit-header__title text-size-xxl">UI Elements</h1>
-        <p class="kit-header__text text-size-medium">
+        <h1 class="text-size-xxl">UI Elements</h1>
+        <p class="text-size-medium is--muted">
           Сторінка компонентів проєкту. Усі стилі компонентів лежать у
           css/components і вже підключені в styles.css, тож розмітку звідси
           можна копіювати в секції без додаткових підключень. Стани hover, focus
@@ -49,133 +48,153 @@
 
     <main>
       <section class="kit-section" id="colors">
-        <div class="container">
-          <h2 class="kit-section__title text-size-md">Colors</h2>
-          <p class="kit-section__text">CSS-змінні з css/base.css.</p>
+        <div class="container kit-section__inner">
+          <div class="kit-section__head">
+            <h2 class="text-size-md">Colors</h2>
+            <p class="text-size-regular is--muted">
+              CSS-змінні з css/base.css.
+            </p>
+          </div>
           <ul class="color-list">
             <li class="color-card">
               <div
                 class="color-card__swatch"
                 style="background-color: var(--color-neutral-darkest)"
               ></div>
-              <p class="color-card__name">--color-neutral-darkest</p>
-              <p class="color-card__value">#0b0500</p>
+              <p class="text-size-small is--semibold">
+                --color-neutral-darkest
+              </p>
+              <p class="text-size-tiny is--muted">#0b0500</p>
             </li>
             <li class="color-card">
               <div
                 class="color-card__swatch"
                 style="background-color: var(--color-white)"
               ></div>
-              <p class="color-card__name">--color-white</p>
-              <p class="color-card__value">#ffffff</p>
+              <p class="text-size-small is--semibold">--color-white</p>
+              <p class="text-size-tiny is--muted">#ffffff</p>
             </li>
             <li class="color-card">
               <div
                 class="color-card__swatch"
                 style="background-color: var(--color-background)"
               ></div>
-              <p class="color-card__name">--color-background</p>
-              <p class="color-card__value">#fceee6</p>
+              <p class="text-size-small is--semibold">--color-background</p>
+              <p class="text-size-tiny is--muted">#fceee6</p>
             </li>
             <li class="color-card">
               <div
                 class="color-card__swatch"
                 style="background-color: var(--color-bamboo)"
               ></div>
-              <p class="color-card__name">--color-bamboo</p>
-              <p class="color-card__value">#e15d05</p>
+              <p class="text-size-small is--semibold">--color-bamboo</p>
+              <p class="text-size-tiny is--muted">#e15d05</p>
             </li>
             <li class="color-card">
               <div
                 class="color-card__swatch"
                 style="background-color: var(--color-bamboo-light)"
               ></div>
-              <p class="color-card__name">--color-bamboo-light</p>
-              <p class="color-card__value">#ea8d50</p>
+              <p class="text-size-small is--semibold">--color-bamboo-light</p>
+              <p class="text-size-tiny is--muted">#ea8d50</p>
             </li>
             <li class="color-card">
               <div
                 class="color-card__swatch"
                 style="background-color: var(--color-bamboo-dark)"
               ></div>
-              <p class="color-card__name">--color-bamboo-dark</p>
-              <p class="color-card__value">#b44a04</p>
+              <p class="text-size-small is--semibold">--color-bamboo-dark</p>
+              <p class="text-size-tiny is--muted">#b44a04</p>
             </li>
             <li class="color-card">
               <div
                 class="color-card__swatch"
                 style="background-color: var(--color-bamboo-darker)"
               ></div>
-              <p class="color-card__name">--color-bamboo-darker</p>
-              <p class="color-card__value">#5a2502</p>
+              <p class="text-size-small is--semibold">--color-bamboo-darker</p>
+              <p class="text-size-tiny is--muted">#5a2502</p>
             </li>
             <li class="color-card">
               <div
                 class="color-card__swatch"
                 style="background-color: var(--color-neutral-lighter)"
               ></div>
-              <p class="color-card__name">--color-neutral-lighter</p>
-              <p class="color-card__value">#dad9d8</p>
+              <p class="text-size-small is--semibold">
+                --color-neutral-lighter
+              </p>
+              <p class="text-size-tiny is--muted">#dad9d8</p>
             </li>
             <li class="color-card">
               <div
                 class="color-card__swatch"
                 style="background-color: var(--color-error)"
               ></div>
-              <p class="color-card__name">--color-error</p>
-              <p class="color-card__value">#ad0000</p>
+              <p class="text-size-small is--semibold">--color-error</p>
+              <p class="text-size-tiny is--muted">#ad0000</p>
             </li>
             <li class="color-card">
               <div
                 class="color-card__swatch"
                 style="background-color: var(--color-neutral-darkest-60)"
               ></div>
-              <p class="color-card__name">--color-neutral-darkest-60</p>
-              <p class="color-card__value">rgba(11, 5, 0, 0.6)</p>
+              <p class="text-size-small is--semibold">
+                --color-neutral-darkest-60
+              </p>
+              <p class="text-size-tiny is--muted">rgba(11, 5, 0, 0.6)</p>
             </li>
             <li class="color-card">
               <div
                 class="color-card__swatch"
                 style="background-color: var(--color-neutral-darkest-50)"
               ></div>
-              <p class="color-card__name">--color-neutral-darkest-50</p>
-              <p class="color-card__value">rgba(11, 5, 0, 0.5)</p>
+              <p class="text-size-small is--semibold">
+                --color-neutral-darkest-50
+              </p>
+              <p class="text-size-tiny is--muted">rgba(11, 5, 0, 0.5)</p>
             </li>
             <li class="color-card">
               <div
                 class="color-card__swatch"
                 style="background-color: var(--color-neutral-darkest-15)"
               ></div>
-              <p class="color-card__name">--color-neutral-darkest-15</p>
-              <p class="color-card__value">rgba(11, 5, 0, 0.15)</p>
+              <p class="text-size-small is--semibold">
+                --color-neutral-darkest-15
+              </p>
+              <p class="text-size-tiny is--muted">rgba(11, 5, 0, 0.15)</p>
             </li>
             <li class="color-card">
               <div
                 class="color-card__swatch"
                 style="background-color: var(--color-neutral-darkest-5)"
               ></div>
-              <p class="color-card__name">--color-neutral-darkest-5</p>
-              <p class="color-card__value">rgba(11, 5, 0, 0.05)</p>
+              <p class="text-size-small is--semibold">
+                --color-neutral-darkest-5
+              </p>
+              <p class="text-size-tiny is--muted">rgba(11, 5, 0, 0.05)</p>
             </li>
           </ul>
         </div>
       </section>
 
       <section class="kit-section" id="typography">
-        <div class="container">
-          <h2 class="kit-section__title text-size-md">Typography</h2>
-          <p class="kit-section__text">
-            css/typography.css, вже підключено в styles.css. Над кожним
-            прикладом вказано клас, який треба додати до тегу, щоб текст мав
-            потрібний вигляд. Класи text-size-xxl, text-size-xl і text-size-lg
-            адаптивні: до 1440px мобільний розмір, з 1440px десктопний. Клас
-            можна поєднувати з класом секції.
-          </p>
+        <div class="container kit-section__inner">
+          <div class="kit-section__head">
+            <h2 class="text-size-md">Typography</h2>
+            <p class="text-size-regular is--muted">
+              css/typography.css, вже підключено в styles.css. Над кожним
+              прикладом вказано клас, який треба додати до тегу. Клас
+              text-size-* основний і задає розмір, вагу та висоту рядка. Класи
+              text-size-xxl, text-size-xl і text-size-lg адаптивні: до 1440px
+              мобільний розмір, з 1440px десктопний. Якщо тексту потрібно щось
+              додаткове (колір, вирівнювання тощо), додай модифікатор з
+              префіксом is-- і опиши його в css своєї секції.
+            </p>
+          </div>
           <div class="kit-preview">
             <div class="type-sample">
               <div class="type-sample__meta">
                 <code class="type-sample__class">.text-size-xxl</code>
-                <span class="type-sample__specs"
+                <span class="text-size-tiny is--muted"
                   >Mobile/Tablet 40 · Desktop 52 · 600 · 1.2 · -1%</span
                 >
               </div>
@@ -184,7 +203,7 @@
             <div class="type-sample">
               <div class="type-sample__meta">
                 <code class="type-sample__class">.text-size-xl</code>
-                <span class="type-sample__specs"
+                <span class="text-size-tiny is--muted"
                   >Mobile/Tablet 36 · Desktop 48 · 600 · 1.2 · -1%</span
                 >
               </div>
@@ -193,7 +212,7 @@
             <div class="type-sample">
               <div class="type-sample__meta">
                 <code class="type-sample__class">.text-size-lg</code>
-                <span class="type-sample__specs"
+                <span class="text-size-tiny is--muted"
                   >Mobile/Tablet 32 · Desktop 40 · 600 · 1.2 · -1%</span
                 >
               </div>
@@ -202,14 +221,18 @@
             <div class="type-sample">
               <div class="type-sample__meta">
                 <code class="type-sample__class">.text-size-md</code>
-                <span class="type-sample__specs">32 · 600 · 1.3 · -1%</span>
+                <span class="text-size-tiny is--muted"
+                  >32 · 600 · 1.3 · -1%</span
+                >
               </div>
               <p class="text-size-md">How to find us</p>
             </div>
             <div class="type-sample">
               <div class="type-sample__meta">
                 <code class="type-sample__class">.text-size-sm</code>
-                <span class="type-sample__specs">24 · 400 · 1.4 · -1%</span>
+                <span class="text-size-tiny is--muted"
+                  >24 · 400 · 1.4 · -1%</span
+                >
               </div>
               <p class="text-size-sm">
                 Cozy Book Club — “The Midnight Library”
@@ -218,14 +241,16 @@
             <div class="type-sample">
               <div class="type-sample__meta">
                 <code class="type-sample__class">.text-size-xs</code>
-                <span class="type-sample__specs">20 · 400 · 1.4 · -1%</span>
+                <span class="text-size-tiny is--muted"
+                  >20 · 400 · 1.4 · -1%</span
+                >
               </div>
               <p class="text-size-xs">Display xs text</p>
             </div>
             <div class="type-sample">
               <div class="type-sample__meta">
                 <code class="type-sample__class">.text-size-tagline</code>
-                <span class="type-sample__specs">16 · 600 · 1.5</span>
+                <span class="text-size-tiny is--muted">16 · 600 · 1.5</span>
               </div>
               <p class="text-size-tagline">Events</p>
             </div>
@@ -234,14 +259,14 @@
                 <code class="type-sample__class"
                   >.text-size-large-semibold</code
                 >
-                <span class="type-sample__specs">20 · 600 · 1.5</span>
+                <span class="text-size-tiny is--muted">20 · 600 · 1.5</span>
               </div>
               <p class="text-size-large-semibold">$15</p>
             </div>
             <div class="type-sample">
               <div class="type-sample__meta">
                 <code class="type-sample__class">.text-size-medium</code>
-                <span class="type-sample__specs">18 · 400 · 1.5</span>
+                <span class="text-size-tiny is--muted">18 · 400 · 1.5</span>
               </div>
               <p class="text-size-medium">
                 See what our readers are saying about us!
@@ -252,14 +277,14 @@
                 <code class="type-sample__class"
                   >.text-size-medium-semibold</code
                 >
-                <span class="type-sample__specs">18 · 600 · 1.5</span>
+                <span class="text-size-tiny is--muted">18 · 600 · 1.5</span>
               </div>
               <p class="text-size-medium-semibold">I will find you</p>
             </div>
             <div class="type-sample">
               <div class="type-sample__meta">
                 <code class="type-sample__class">.text-size-regular</code>
-                <span class="type-sample__specs">16 · 400 · 1.5</span>
+                <span class="text-size-tiny is--muted">16 · 400 · 1.5</span>
               </div>
               <p class="text-size-regular">
                 Join us for an evening of tea, thoughtful conversation, and
@@ -271,44 +296,50 @@
                 <code class="type-sample__class"
                   >.text-size-regular-semibold</code
                 >
-                <span class="type-sample__specs">16 · 600 · 1.5</span>
+                <span class="text-size-tiny is--muted">16 · 600 · 1.5</span>
               </div>
               <p class="text-size-regular-semibold">Jane Doe</p>
             </div>
             <div class="type-sample">
               <div class="type-sample__meta">
                 <code class="type-sample__class">.text-size-small</code>
-                <span class="type-sample__specs">14 · 400 · 1.5</span>
+                <span class="text-size-tiny is--muted">14 · 400 · 1.5</span>
               </div>
               <p class="text-size-small">Harlan Coben</p>
             </div>
             <div class="type-sample">
               <div class="type-sample__meta">
                 <code class="type-sample__class">.text-size-tiny</code>
-                <span class="type-sample__specs">12 · 400 · 1.5</span>
+                <span class="text-size-tiny is--muted">12 · 400 · 1.5</span>
               </div>
               <p class="text-size-tiny">© 2025 Booksy. All rights reserved.</p>
             </div>
           </div>
           <pre
             class="kit-code"
-          ><code>&lt;h1 class="hero__title text-size-xxl"&gt;Discover Your Next Great Read Today!&lt;/h1&gt;
-&lt;p class="feedbacks__text text-size-medium"&gt;See what our readers are saying about us!&lt;/p&gt;</code></pre>
+          ><code>&lt;h2 class="text-size-xl"&gt;Customer Feedbacks&lt;/h2&gt;
+&lt;p class="text-size-medium"&gt;See what our readers are saying about us!&lt;/p&gt;
+
+&lt;h1 class="text-size-xxl is--white"&gt;Get 10% off your first order&lt;/h1&gt;
+
+.is--white {
+  color: var(--color-white);
+}</code></pre>
         </div>
       </section>
 
       <section class="kit-section" id="buttons">
-        <div class="container">
-          <h2 class="kit-section__title text-size-md">Buttons</h2>
-          <p class="kit-section__text">
-            css/components/button.css. Працює і для button, і для a. Стани:
-            hover/focus, active, disabled.
-          </p>
+        <div class="container kit-section__inner">
+          <div class="kit-section__head">
+            <h2 class="text-size-md">Buttons</h2>
+            <p class="text-size-regular is--muted">
+              css/components/button.css. Працює і для button, і для a. Стани:
+              hover/focus, active, disabled.
+            </p>
+          </div>
 
           <div class="kit-group">
-            <h3 class="kit-section__subtitle text-size-large-semibold">
-              Primary
-            </h3>
+            <h3 class="text-size-large-semibold">Primary</h3>
             <div class="kit-preview">
               <div class="kit-row">
                 <button class="btn btn--primary" type="button">Button</button>
@@ -336,9 +367,7 @@
           </div>
 
           <div class="kit-group">
-            <h3 class="kit-section__subtitle text-size-large-semibold">
-              Secondary
-            </h3>
+            <h3 class="text-size-large-semibold">Secondary</h3>
             <div class="kit-preview">
               <div class="kit-row">
                 <button class="btn btn--secondary" type="button">Button</button>
@@ -366,12 +395,14 @@
       </section>
 
       <section class="kit-section" id="links">
-        <div class="container">
-          <h2 class="kit-section__title text-size-md">Links</h2>
-          <p class="kit-section__text">
-            css/components/link.css. Для a і для button, який виглядає як
-            посилання. Іконка додається через спрайт.
-          </p>
+        <div class="container kit-section__inner">
+          <div class="kit-section__head">
+            <h2 class="text-size-md">Links</h2>
+            <p class="text-size-regular is--muted">
+              css/components/link.css. Для a і для button, який виглядає як
+              посилання. Іконка додається через спрайт.
+            </p>
+          </div>
           <div class="kit-preview">
             <div class="kit-row">
               <a class="link" href="#links">Link</a>
@@ -403,17 +434,17 @@
       </section>
 
       <section class="kit-section" id="inputs">
-        <div class="container">
-          <h2 class="kit-section__title text-size-md">Inputs</h2>
-          <p class="kit-section__text">
-            css/components/field.css. Стан помилки вмикається класом
-            field--error на обгортці.
-          </p>
+        <div class="container kit-section__inner">
+          <div class="kit-section__head">
+            <h2 class="text-size-md">Inputs</h2>
+            <p class="text-size-regular is--muted">
+              css/components/field.css. Стан помилки вмикається класом
+              field--error на обгортці.
+            </p>
+          </div>
 
           <div class="kit-group">
-            <h3 class="kit-section__subtitle text-size-large-semibold">
-              Text Input
-            </h3>
+            <h3 class="text-size-large-semibold">Text Input</h3>
             <div class="kit-preview">
               <div class="kit-grid kit-grid--2">
                 <label class="field">
@@ -463,9 +494,7 @@
           </div>
 
           <div class="kit-group">
-            <h3 class="kit-section__subtitle text-size-large-semibold">
-              Text Area
-            </h3>
+            <h3 class="text-size-large-semibold">Text Area</h3>
             <div class="kit-preview">
               <div class="kit-grid kit-grid--2">
                 <label class="field">
@@ -500,12 +529,14 @@
       </section>
 
       <section class="kit-section" id="arrows">
-        <div class="container">
-          <h2 class="kit-section__title text-size-md">Arrows</h2>
-          <p class="kit-section__text">
-            css/components/arrow-btn.css. Кнопки слайдерів і scroll up.
-            Неактивний стан через атрибут disabled.
-          </p>
+        <div class="container kit-section__inner">
+          <div class="kit-section__head">
+            <h2 class="text-size-md">Arrows</h2>
+            <p class="text-size-regular is--muted">
+              css/components/arrow-btn.css. Кнопки слайдерів і scroll up.
+              Неактивний стан через атрибут disabled.
+            </p>
+          </div>
           <div class="kit-preview">
             <div class="kit-row">
               <button
@@ -604,14 +635,16 @@
       </section>
 
       <section class="kit-section" id="icons">
-        <div class="container">
-          <h2 class="kit-section__title text-size-md">Icons</h2>
-          <p class="kit-section__text">
-            Спрайт img/icons.svg. Колір іконки задається через color, бо
-            всередині fill: currentColor.
-          </p>
+        <div class="container kit-section__inner">
+          <div class="kit-section__head">
+            <h2 class="text-size-md">Icons</h2>
+            <p class="text-size-regular is--muted">
+              Спрайт img/icons.svg. Колір іконки задається через color, бо
+              всередині fill: currentColor.
+            </p>
+          </div>
           <ul class="icon-list">
-            <li class="icon-card">
+            <li class="icon-card text-size-tiny">
               <svg
                 class="icon-card__svg"
                 width="24"
@@ -622,7 +655,7 @@
               </svg>
               icon-menu
             </li>
-            <li class="icon-card">
+            <li class="icon-card text-size-tiny">
               <svg
                 class="icon-card__svg"
                 width="24"
@@ -633,7 +666,7 @@
               </svg>
               icon-close
             </li>
-            <li class="icon-card">
+            <li class="icon-card text-size-tiny">
               <svg
                 class="icon-card__svg"
                 width="24"
@@ -644,7 +677,7 @@
               </svg>
               icon-arrow-left
             </li>
-            <li class="icon-card">
+            <li class="icon-card text-size-tiny">
               <svg
                 class="icon-card__svg"
                 width="24"
@@ -655,7 +688,7 @@
               </svg>
               icon-arrow-right
             </li>
-            <li class="icon-card">
+            <li class="icon-card text-size-tiny">
               <svg
                 class="icon-card__svg"
                 width="24"
@@ -666,7 +699,7 @@
               </svg>
               icon-arrow-up
             </li>
-            <li class="icon-card">
+            <li class="icon-card text-size-tiny">
               <svg
                 class="icon-card__svg"
                 width="24"
@@ -677,7 +710,7 @@
               </svg>
               icon-arrow-down
             </li>
-            <li class="icon-card">
+            <li class="icon-card text-size-tiny">
               <svg
                 class="icon-card__svg"
                 width="24"
@@ -688,7 +721,7 @@
               </svg>
               icon-chevron-left
             </li>
-            <li class="icon-card">
+            <li class="icon-card text-size-tiny">
               <svg
                 class="icon-card__svg"
                 width="24"
@@ -699,7 +732,7 @@
               </svg>
               icon-chevron-right
             </li>
-            <li class="icon-card">
+            <li class="icon-card text-size-tiny">
               <svg
                 class="icon-card__svg"
                 width="24"
@@ -710,7 +743,7 @@
               </svg>
               icon-chevron-up
             </li>
-            <li class="icon-card">
+            <li class="icon-card text-size-tiny">
               <svg
                 class="icon-card__svg"
                 width="24"
@@ -721,7 +754,7 @@
               </svg>
               icon-chevron-down
             </li>
-            <li class="icon-card">
+            <li class="icon-card text-size-tiny">
               <svg
                 class="icon-card__svg"
                 width="24"
@@ -732,7 +765,7 @@
               </svg>
               icon-plus
             </li>
-            <li class="icon-card">
+            <li class="icon-card text-size-tiny">
               <svg
                 class="icon-card__svg"
                 width="24"
@@ -743,7 +776,7 @@
               </svg>
               icon-minus
             </li>
-            <li class="icon-card">
+            <li class="icon-card text-size-tiny">
               <svg
                 class="icon-card__svg"
                 width="24"
@@ -754,7 +787,7 @@
               </svg>
               icon-check
             </li>
-            <li class="icon-card">
+            <li class="icon-card text-size-tiny">
               <svg
                 class="icon-card__svg"
                 width="24"
@@ -765,7 +798,7 @@
               </svg>
               icon-star
             </li>
-            <li class="icon-card">
+            <li class="icon-card text-size-tiny">
               <svg
                 class="icon-card__svg"
                 width="24"
@@ -776,7 +809,7 @@
               </svg>
               icon-envelope
             </li>
-            <li class="icon-card">
+            <li class="icon-card text-size-tiny">
               <svg
                 class="icon-card__svg"
                 width="24"
@@ -787,7 +820,7 @@
               </svg>
               icon-phone
             </li>
-            <li class="icon-card">
+            <li class="icon-card text-size-tiny">
               <svg
                 class="icon-card__svg"
                 width="24"
@@ -798,7 +831,7 @@
               </svg>
               icon-map
             </li>
-            <li class="icon-card">
+            <li class="icon-card text-size-tiny">
               <svg width="84" height="21" aria-hidden="true">
                 <use href="./img/icons.svg#icon-logo"></use>
               </svg>
@@ -814,20 +847,22 @@
       </section>
 
       <section class="kit-section" id="images">
-        <div class="container">
-          <h2 class="kit-section__title text-size-md">Images</h2>
-          <p class="kit-section__text">
-            Усі зображення лежать у img/ у розмірах 1x і 2x, формати webp і jpg
-            (для аватарів webp і png). Webp завжди йде першим source, jpg або
-            png у img як запасний варіант. Обов'язково вказуй width, height і
-            alt.
-          </p>
+        <div class="container kit-section__inner">
+          <div class="kit-section__head">
+            <h2 class="text-size-md">Images</h2>
+            <p class="text-size-regular is--muted">
+              Усі зображення лежать у img/ у розмірах 1x і 2x, формати webp і
+              jpg (для аватарів webp і png). Webp завжди йде першим source, jpg
+              або png у img як запасний варіант. Обов'язково вказуй width,
+              height і alt.
+            </p>
+          </div>
 
           <div class="kit-group">
-            <h3 class="kit-section__subtitle text-size-large-semibold">
+            <h3 class="text-size-large-semibold">
               Різні кадри під екрани (Hero, Article)
             </h3>
-            <p class="kit-section__text">
+            <p class="text-size-regular is--muted">
               Для кожного брейкпоінта свій файл: desktop від 1440px, tablet від
               768px, mobile за замовчуванням. Так само підключається
               article/article-desktop, -tablet, -mobile. Затемнення банерів
@@ -930,10 +965,10 @@
           </div>
 
           <div class="kit-group">
-            <h3 class="kit-section__subtitle text-size-large-semibold">
+            <h3 class="text-size-large-semibold">
               Один набір на всі екрани (Events)
             </h3>
-            <p class="kit-section__text">
+            <p class="text-size-regular is--muted">
               Один файл на всі брейкпоінти. Картинка має висоту 277px і
               object-fit: cover, тому підлаштовується під ширину картки.
             </p>
@@ -974,10 +1009,10 @@
           </div>
 
           <div class="kit-group">
-            <h3 class="kit-section__subtitle text-size-large-semibold">
+            <h3 class="text-size-large-semibold">
               Аватар з прозорістю (Feedbacks)
             </h3>
-            <p class="kit-section__text">
+            <p class="text-size-regular is--muted">
               Аватари мають прозорі кути, тому запасний формат png, а не jpg.
             </p>
             <div class="kit-preview">

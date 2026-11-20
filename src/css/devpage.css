@@ -226,6 +226,22 @@
   }
 }
 
+.dev-image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-large);
+}
+
+.dev-image--event {
+  max-width: 422px;
+  height: 277px;
+  object-fit: cover;
+}
+
+.dev-image--avatar {
+  border-radius: 50%;
+}
+
 @media only screen and (min-width: 1440px) {
   .dev-header__title {
     font-size: 52px;

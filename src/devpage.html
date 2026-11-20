@@ -41,6 +41,7 @@
           <a class="link" href="#inputs">Inputs</a>
           <a class="link" href="#arrows">Arrows</a>
           <a class="link" href="#icons">Icons</a>
+          <a class="link" href="#images">Images</a>
           <a class="link" href="./index.html">На головну</a>
         </nav>
       </div>
@@ -730,6 +731,205 @@
           ><code>&lt;svg width="24" height="24" aria-hidden="true"&gt;
   &lt;use href="./img/icons.svg#icon-phone"&gt;&lt;/use&gt;
 &lt;/svg&gt;</code></pre>
+        </div>
+      </section>
+
+      <section class="dev-section" id="images">
+        <div class="container">
+          <h2 class="dev-section__title">Images</h2>
+          <p class="dev-section__text">
+            Усі зображення лежать у img/ у розмірах 1x і 2x, формати webp і jpg
+            (для аватарів webp і png). Webp завжди йде першим source, jpg або
+            png у img як запасний варіант. Обов'язково вказуй width, height і
+            alt.
+          </p>
+
+          <div class="dev-group">
+            <h3 class="dev-subtitle">Різні кадри під екрани (Hero, Article)</h3>
+            <p class="dev-section__text">
+              Для кожного брейкпоінта свій файл: desktop від 1440px, tablet від
+              768px, mobile за замовчуванням. Так само підключається
+              article/article-desktop, -tablet, -mobile. Затемнення банерів
+              робиться в CSS, а не в картинці: banner-1 0%, banner-2 40%,
+              banner-3 20%, banner-4 30% чорного.
+            </p>
+            <div class="dev-box">
+              <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="
+                    ./img/hero/banner-1-desktop.webp    1x,
+                    ./img/hero/banner-1-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="
+                    ./img/hero/banner-1-desktop.jpg    1x,
+                    ./img/hero/banner-1-desktop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/hero/banner-1-tablet.webp    1x,
+                    ./img/hero/banner-1-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/hero/banner-1-tablet.jpg    1x,
+                    ./img/hero/banner-1-tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  srcset="
+                    ./img/hero/banner-1-mobile.webp    1x,
+                    ./img/hero/banner-1-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="dev-image"
+                  src="./img/hero/banner-1-mobile.jpg"
+                  srcset="./img/hero/banner-1-mobile@2x.jpg 2x"
+                  width="343"
+                  height="199"
+                  alt="Cozy reading corner with a book and a cup of tea"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <pre class="dev-code"><code>&lt;picture&gt;
+  &lt;source
+    media="(min-width: 1440px)"
+    srcset="./img/hero/banner-1-desktop.webp 1x, ./img/hero/banner-1-desktop@2x.webp 2x"
+    type="image/webp"
+  /&gt;
+  &lt;source
+    media="(min-width: 1440px)"
+    srcset="./img/hero/banner-1-desktop.jpg 1x, ./img/hero/banner-1-desktop@2x.jpg 2x"
+  /&gt;
+  &lt;source
+    media="(min-width: 768px)"
+    srcset="./img/hero/banner-1-tablet.webp 1x, ./img/hero/banner-1-tablet@2x.webp 2x"
+    type="image/webp"
+  /&gt;
+  &lt;source
+    media="(min-width: 768px)"
+    srcset="./img/hero/banner-1-tablet.jpg 1x, ./img/hero/banner-1-tablet@2x.jpg 2x"
+  /&gt;
+  &lt;source
+    srcset="./img/hero/banner-1-mobile.webp 1x, ./img/hero/banner-1-mobile@2x.webp 2x"
+    type="image/webp"
+  /&gt;
+  &lt;img
+    src="./img/hero/banner-1-mobile.jpg"
+    srcset="./img/hero/banner-1-mobile@2x.jpg 2x"
+    width="343"
+    height="199"
+    alt="Cozy reading corner with a book and a cup of tea"
+  /&gt;
+&lt;/picture&gt;
+
+.banner {
+  position: relative;
+}
+
+.banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: inherit;
+}</code></pre>
+          </div>
+
+          <div class="dev-group">
+            <h3 class="dev-subtitle">Один набір на всі екрани (Events)</h3>
+            <p class="dev-section__text">
+              Один файл на всі брейкпоінти. Картинка має висоту 277px і
+              object-fit: cover, тому підлаштовується під ширину картки.
+            </p>
+            <div class="dev-box">
+              <picture>
+                <source
+                  srcset="
+                    ./img/events/event-1.webp    1x,
+                    ./img/events/event-1@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="dev-image dev-image--event"
+                  src="./img/events/event-1.jpg"
+                  srcset="./img/events/event-1@2x.jpg 2x"
+                  width="422"
+                  height="277"
+                  alt="Book club meeting in a cozy bookstore"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <pre class="dev-code"><code>&lt;picture&gt;
+  &lt;source
+    srcset="./img/events/event-1.webp 1x, ./img/events/event-1@2x.webp 2x"
+    type="image/webp"
+  /&gt;
+  &lt;img
+    src="./img/events/event-1.jpg"
+    srcset="./img/events/event-1@2x.jpg 2x"
+    width="422"
+    height="277"
+    alt="Book club meeting in a cozy bookstore"
+    loading="lazy"
+  /&gt;
+&lt;/picture&gt;</code></pre>
+          </div>
+
+          <div class="dev-group">
+            <h3 class="dev-subtitle">Аватар з прозорістю (Feedbacks)</h3>
+            <p class="dev-section__text">
+              Аватари мають прозорі кути, тому запасний формат png, а не jpg.
+            </p>
+            <div class="dev-box">
+              <picture>
+                <source
+                  srcset="
+                    ./img/feedbacks/avatar-1.webp    1x,
+                    ./img/feedbacks/avatar-1@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="dev-image--avatar"
+                  src="./img/feedbacks/avatar-1.png"
+                  srcset="./img/feedbacks/avatar-1@2x.png 2x"
+                  width="48"
+                  height="48"
+                  alt="Jane Doe"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <pre class="dev-code"><code>&lt;picture&gt;
+  &lt;source
+    srcset="./img/feedbacks/avatar-1.webp 1x, ./img/feedbacks/avatar-1@2x.webp 2x"
+    type="image/webp"
+  /&gt;
+  &lt;img
+    src="./img/feedbacks/avatar-1.png"
+    srcset="./img/feedbacks/avatar-1@2x.png 2x"
+    width="48"
+    height="48"
+    alt="Jane Doe"
+    loading="lazy"
+  /&gt;
+&lt;/picture&gt;</code></pre>
+          </div>
         </div>
       </section>
     </main>

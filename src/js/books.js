@@ -22,6 +22,7 @@ const state = {
   category: ALL_CATEGORIES,
   books: [],
   shown: 0,
+  extra: 0,
   requestId: 0,
 };
 
@@ -120,15 +121,21 @@ function updateMoreButton() {
   refs.more.classList.toggle('is--hidden', state.shown >= state.books.length);
 }
 
-function showBooks(count) {
-  const nextBooks = state.books.slice(state.shown, state.shown + count);
+function syncBooks() {
+  const target = Math.min(getInitialLimit() + state.extra, state.books.length);
 
-  refs.list.insertAdjacentHTML(
-    'beforeend',
-    nextBooks.map(createBookMarkup).join('')
-  );
+  if (target > state.shown) {
+    const nextBooks = state.books.slice(state.shown, target);
 
-  state.shown += nextBooks.length;
+    refs.list.insertAdjacentHTML(
+      'beforeend',
+      nextBooks.map(createBookMarkup).join('')
+    );
+  } else if (target < state.shown) {
+    [...refs.list.children].slice(target).forEach(item => item.remove());
+  }
+
+  state.shown = target;
   updateCounter();
   updateMoreButton();
 }
@@ -152,6 +159,7 @@ async function loadBooks(category) {
 
   state.books = [];
   state.shown = 0;
+  state.extra = 0;
   refs.list.innerHTML = '';
   refs.list.setAttribute('aria-busy', 'true');
   updateCounter();
@@ -172,7 +180,7 @@ async function loadBooks(category) {
       return;
     }
 
-    showBooks(getInitialLimit());
+    syncBooks();
   } catch {
     if (requestId === state.requestId) {
       renderMessage('Failed to load books. Please try again later.');
@@ -264,7 +272,14 @@ function onDocumentKeydown(event) {
 }
 
 function onMoreClick() {
-  showBooks(LOAD_STEP);
+  state.extra += LOAD_STEP;
+  syncBooks();
+}
+
+function onBreakpointChange() {
+  if (state.books.length > 0) {
+    syncBooks();
+  }
 }
 
 function onListClick(event) {
@@ -287,6 +302,7 @@ refs.more.addEventListener('click', onMoreClick);
 refs.list.addEventListener('click', onListClick);
 document.addEventListener('click', onDocumentClick);
 document.addEventListener('keydown', onDocumentKeydown);
+tabletQuery.addEventListener('change', onBreakpointChange);
 
 renderCategories([]);
 loadCategories();

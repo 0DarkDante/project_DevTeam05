@@ -4,7 +4,7 @@
   height: 64px;
 }
 
-.container {
+.header-container {
   width: 100%;
   min-width: 320px;
   height: 100%;
@@ -20,6 +20,10 @@
   align-items: center;
   text-decoration: none;
   color: var(--color-neutral-darkest);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .burger-btn {

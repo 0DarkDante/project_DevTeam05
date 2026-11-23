@@ -1,1 +1,62 @@
-<div class="backdrop contact-modal-backdrop"></div>
+<div class="backdrop contact-modal-backdrop is-hidden">
+  <div class="contact-modal">
+    <button type="button" class="contact-modal-close" aria-label="Close modal">
+      <svg
+        class="contact-modal-close-icon"
+        width="24"
+        height="24"
+        aria-hidden="true"
+      >
+        <use href="./img/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <div class="contact-modal-header">
+      <h2 class="contact-modal-title text-size-xxl">Register</h2>
+
+      <p class="contact-modal-event text-size-sm"></p>
+    </div>
+
+    <form class="contact-form">
+      <label class="field">
+        <span class="text-size-regular">Name*</span>
+
+        <input
+          class="field__input"
+          type="text"
+          name="name"
+          placeholder="Ann"
+          required
+        />
+      </label>
+
+      <label class="field">
+        <span class="text-size-regular">Email*</span>
+
+        <input
+          class="field__input"
+          type="email"
+          name="email"
+          placeholder="hello@booksy.com"
+          required
+        />
+
+        <span class="field__error"> Please enter a valid email address </span>
+      </label>
+
+      <label class="field">
+        <span class="text-size-regular"> Message </span>
+
+        <textarea
+          class="field__textarea"
+          name="message"
+          placeholder="Type your message..."
+        ></textarea>
+      </label>
+
+      <button type="submit" class="btn btn--primary contact-form-btn">
+        Register
+      </button>
+    </form>
+  </div>
+</div>

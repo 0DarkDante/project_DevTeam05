@@ -24,6 +24,9 @@
 .footer-nav-link:hover{
   color: var(--color-white);
 }
+.footer-header {
+  margin-bottom: 16px;
+}
 
 .footer-form {
   margin-top: 32px;

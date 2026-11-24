@@ -15,7 +15,7 @@ const input = document.querySelector('.form-signUp-input');
 input.value = formState.email;
 
 form.addEventListener('input', (event) => {
-    formState[event.target.name] = event.target.value;
+    formState[event.target.name] = event.target.value.trim();
     localStorage.setItem('signUp-form-state', JSON.stringify(formState))
 });
 

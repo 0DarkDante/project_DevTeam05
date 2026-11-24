@@ -173,7 +173,7 @@
     padding: 32px 40px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-start;
     gap: 12px;
   }
@@ -181,7 +181,7 @@
   .hero-title {
     margin: 0;
     width: auto;
-    max-width: 350px;
+    max-width: 274px;
     font-size: 32px;
     line-height: 1.2;
     font-weight: 600;
@@ -254,7 +254,7 @@
     padding: 56px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-start;
     gap: 16px;
   }
@@ -262,7 +262,7 @@
   .hero-title {
     margin: 0;
     width: auto;
-    max-width: 600px;
+    max-width: 400px;
     font-size: 52px;
     line-height: 1.2;
     font-weight: 600;

@@ -1,3 +1,4 @@
+
 .hero {
   width: 100%;
   background-color: #fff0e8;
@@ -51,14 +52,14 @@
   padding: 16px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: flex-start;
   gap: 8px;
 }
 
 .hero-title {
   margin: 0;
-  width: 100%;
+  width: 172px;
   max-width: 240px;
   color: #ffffff;
   font-size: 20px;
@@ -179,6 +180,7 @@
 
   .hero-title {
     margin: 0;
+    width: auto;
     max-width: 350px;
     font-size: 32px;
     line-height: 1.2;
@@ -259,6 +261,7 @@
 
   .hero-title {
     margin: 0;
+    width: auto;
     max-width: 600px;
     font-size: 52px;
     line-height: 1.2;

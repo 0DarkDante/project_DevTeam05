@@ -41,7 +41,7 @@ backdrop.addEventListener('click', event => {
 });
 
 document.addEventListener('keydown', event => {
-  if (event.key === 'Escape' && !backdrop.classList.contains('is-hidden')) {
+  if (event.key === 'Escape' && backdrop.classList.contains('is--open')) {
     closeContactModal();
   }
 });
@@ -73,13 +73,13 @@ function onFormSubmit(event) {
 }
 
 function openContactModal() {
-  backdrop.classList.remove('is-hidden');
+  backdrop.classList.add('is--open');
 
   document.body.classList.add('no-scroll');
 }
 
 function closeContactModal() {
-  backdrop.classList.add('is-hidden');
+  backdrop.classList.remove('is--open');
 
   document.body.classList.remove('no-scroll');
 }

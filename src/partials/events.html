@@ -1,3 +1,171 @@
 <section class="events" id="events">
-  <div class="container"></div>
+  <div class="container">
+    <div class="events-header">
+      <p class="text-size-tagline">Events</p>
+      <h2 class="text-size-xl">Upcoming Events at Booksy</h2>
+      <p class="text-size-medium events-intro-text">
+        Discover readings, workshops, and bookish gatherings — online and
+        offline. Everyone’s welcome.
+      </p>
+    </div>
+
+    <div class="events-image-wrapper">
+      <ul class="events-list">
+        <li class="events-item active">
+          <picture>
+            <source
+              srcset="
+                ./img/events/event-1.webp    1x,
+                ./img/events/event-1@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <img
+              class="events-image"
+              src="./img/events/event-1.jpg"
+              srcset="./img/events/event-1@2x.jpg 2x"
+              width="422"
+              height="277"
+              alt="Book club meeting in a cozy bookstore"
+              loading="lazy"
+            />
+          </picture>
+          <h3 class="text-size-sm">Cozy Book Club — “The Midnight Library”</h3>
+          <p class="text-size-regular">
+            In-store | <time datetime="2027-06-05T18:30">June 5, 6:30 PM</time>
+          </p>
+          <p class="text-size-regular events-description">
+            Join us for an evening of tea, thoughtful conversation, and shared
+            reflections as we dive into Matt Haig’s bestseller.
+          </p>
+          <button class="link" type="button">
+            Register
+            <svg class="link__icon" width="24" height="24" aria-hidden="true">
+              <use href="./img/icons.svg#icon-chevron-right"></use>
+            </svg>
+          </button>
+        </li>
+
+        <li class="events-item">
+          <picture>
+            <source
+              srcset="
+                ./img/events/event-2.webp    1x,
+                ./img/events/event-2@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <img
+              class="events-image"
+              src="./img/events/event-2.jpg"
+              srcset="./img/events/event-2@2x.jpg 2x"
+              width="422"
+              height="277"
+              alt="Book cover design workshop"
+              loading="lazy"
+            />
+          </picture>
+          <h3 class="text-size-sm">Book Cover Design Workshop</h3>
+          <p class="text-size-regular">
+            Online | <time datetime="2027-06-12T19:00">June 12, 7:00 PM</time>
+          </p>
+          <p class="text-size-regular events-description">
+            A hands-on session for aspiring designers and curious readers. Learn
+            what makes a cover stand out — from concept to print.
+          </p>
+          <button class="link" type="button">
+            Register
+            <svg class="link__icon" width="24" height="24" aria-hidden="true">
+              <use href="./img/icons.svg#icon-chevron-right"></use>
+            </svg>
+          </button>
+        </li>
+        <li class="events-item">
+          <picture>
+            <source
+              srcset="
+                ./img/events/event-3.webp    1x,
+                ./img/events/event-3@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <img
+              class="events-image"
+              src="./img/events/event-3.jpg"
+              srcset="./img/events/event-3@2x.jpg 2x"
+              width="422"
+              height="277"
+              alt="Children’s story hour"
+              loading="lazy"
+            />
+          </picture>
+          <h3 class="text-size-sm">Children’s Story Hour</h3>
+          <p class="text-size-regular">
+            In-store |
+            <time datetime="2027-06-15T11:00"> June 15, 11:00 AM</time>
+          </p>
+          <p class="text-size-regular events-description">
+            A magical morning of stories, games, and imagination for our
+            youngest book lovers (ages 4–8).
+          </p>
+          <button class="link" type="button">
+            Register
+            <svg class="link__icon" width="24" height="24" aria-hidden="true">
+              <use href="./img/icons.svg#icon-chevron-right"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="events-pagination">
+      <div class="events-dots">
+        <button
+          class="events-dot active"
+          type="button"
+          aria-label="Show event 1"
+        ></button>
+        <button
+          class="events-dot"
+          type="button"
+          aria-label="Show event 2"
+        ></button>
+        <button
+          class="events-dot"
+          type="button"
+          aria-label="Show event 3"
+        ></button>
+      </div>
+      <div class="events-arrows">
+        <button
+          class="arrow-btn events-arrow-left"
+          type="button"
+          aria-label="Next slide"
+        >
+          <svg
+            class="arrow-btn__icon"
+            width="24"
+            height="24"
+            aria-hidden="true"
+          >
+            <use href="./img/icons.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
+        <button
+          class="arrow-btn events-arrow-right"
+          type="button"
+          aria-label="Next slide"
+        >
+          <svg
+            class="arrow-btn__icon"
+            width="24"
+            height="24"
+            aria-hidden="true"
+          >
+            <use href="./img/icons.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
 </section>

@@ -1,3 +1,72 @@
 <section class="article" id="article">
-  <div class="container"></div>
+  <div class="container article-container">
+    <div class="article-text">
+      <h2 class="text-size-xl text-size-article">
+        Welcome to Booksy – your cozy corner for handpicked reads.
+      </h2>
+      <p class="text-size-medium">
+        We believe books are more than just stories — they’re companions,
+        doorways, and memories. Whether you’re chasing adventures or quiet
+        moments, we’re here to help you find your next favorite book.
+      </p>
+    </div>
+    <div class="article-image">
+      <picture>
+        <!-- Desktop WebP -->
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./img/article/article-desktop.webp    1x,
+            ./img/article/article-desktop@2x.webp 2x
+          "
+          type="image/webp"
+        />
+
+        <!-- Desktop JPG -->
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./img/article/article-desktop.jpg    1x,
+            ./img/article/article-desktop@2x.jpg 2x
+          "
+        />
+
+        <!-- Tablet WebP -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./img/article/article-tablet.webp    1x,
+            ./img/article/article-tablet@2x.webp 2x
+          "
+          type="image/webp"
+        />
+
+        <!-- Tablet JPG -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./img/article/article-tablet.jpg    1x,
+            ./img/article/article-tablet@2x.jpg 2x
+          "
+        />
+
+        <!-- Mobile WebP -->
+        <source
+          srcset="
+            ./img/article/article-mobile.webp    1x,
+            ./img/article/article-mobile@2x.webp 2x
+          "
+          type="image/webp"
+        />
+
+        <!-- Mobile JPG -->
+        <img
+          src="./img/article/article-mobile.jpg"
+          srcset="./img/article/article-mobile@2x.jpg 2x"
+          alt="Cozy library with a person reading a book"
+          loading="lazy"
+        />
+      </picture>
+    </div>
+  </div>
 </section>

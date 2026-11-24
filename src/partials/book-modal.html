@@ -1,1 +1,172 @@
-<div class="backdrop book-modal-backdrop"></div>
+<div class="backdrop book-modal-backdrop" data-book-modal>
+  <div
+    class="book-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="book-modal-title"
+  >
+    <button
+      class="book-modal__close"
+      type="button"
+      aria-label="Close modal"
+      data-book-modal-close
+    >
+      <svg
+        class="book-modal__close-icon"
+        width="32"
+        height="32"
+        aria-hidden="true"
+      >
+        <use href="./img/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <div class="book-modal__content">
+      <div class="book-modal__cover" data-book-modal-cover></div>
+
+      <div class="book-modal__info">
+        <div class="book-modal__description">
+          <div class="book-modal__name">
+            <h2
+              class="text-size-lg is--capitalize"
+              id="book-modal-title"
+              data-book-modal-title
+            ></h2>
+            <p class="text-size-small" data-book-modal-author></p>
+            <p class="text-size-sm" data-book-modal-price></p>
+          </div>
+
+          <form class="book-modal__form" data-book-modal-form>
+            <div class="book-modal__quantity">
+              <button
+                class="btn btn--secondary book-modal__qty-btn"
+                type="button"
+                aria-label="Decrease quantity"
+                data-quantity-decrease
+              >
+                -
+              </button>
+              <label class="visually-hidden" for="book-modal-quantity">
+                Quantity
+              </label>
+              <input
+                class="book-modal__qty-input"
+                id="book-modal-quantity"
+                type="number"
+                name="quantity"
+                value="1"
+                min="1"
+                max="99"
+                required
+                data-quantity-input
+              />
+              <button
+                class="btn btn--secondary book-modal__qty-btn"
+                type="button"
+                aria-label="Increase quantity"
+                data-quantity-increase
+              >
+                +
+              </button>
+            </div>
+
+            <div class="book-modal__actions">
+              <button
+                class="btn btn--primary book-modal__action"
+                type="button"
+                data-add-to-cart
+              >
+                Add To Cart
+              </button>
+              <button
+                class="btn btn--secondary book-modal__action"
+                type="submit"
+              >
+                Buy Now
+              </button>
+            </div>
+
+            <p
+              class="text-size-small"
+              role="status"
+              hidden
+              data-book-modal-message
+            ></p>
+          </form>
+        </div>
+
+        <ul class="accordion" data-book-modal-accordion>
+          <li class="accordion__item">
+            <h3 class="accordion__header">
+              <button class="accordion__trigger" type="button">
+                <span class="text-size-medium-semibold">Details</span>
+                <svg
+                  class="accordion__icon"
+                  width="24"
+                  height="24"
+                  aria-hidden="true"
+                >
+                  <use href="./img/icons.svg#icon-chevron-down"></use>
+                </svg>
+              </button>
+            </h3>
+            <div class="accordion__panel">
+              <div class="accordion__body">
+                <p class="text-size-regular" data-book-modal-details></p>
+              </div>
+            </div>
+          </li>
+          <li class="accordion__item">
+            <h3 class="accordion__header">
+              <button class="accordion__trigger" type="button">
+                <span class="text-size-medium-semibold">Shipping</span>
+                <svg
+                  class="accordion__icon"
+                  width="24"
+                  height="24"
+                  aria-hidden="true"
+                >
+                  <use href="./img/icons.svg#icon-chevron-down"></use>
+                </svg>
+              </button>
+            </h3>
+            <div class="accordion__panel">
+              <div class="accordion__body">
+                <p class="text-size-regular">
+                  We ship across the United States within 2–5 business days. All
+                  orders are processed through USPS or a reliable courier
+                  service. Enjoy free standard shipping on orders over $50.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="accordion__item">
+            <h3 class="accordion__header">
+              <button class="accordion__trigger" type="button">
+                <span class="text-size-medium-semibold">Returns</span>
+                <svg
+                  class="accordion__icon"
+                  width="24"
+                  height="24"
+                  aria-hidden="true"
+                >
+                  <use href="./img/icons.svg#icon-chevron-down"></use>
+                </svg>
+              </button>
+            </h3>
+            <div class="accordion__panel">
+              <div class="accordion__body">
+                <p class="text-size-regular">
+                  You can return an item within 14 days of receiving your order,
+                  provided it hasn’t been used and is in its original condition.
+                  To start a return, please contact our support team — we’ll
+                  guide you through the process quickly and hassle-free.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

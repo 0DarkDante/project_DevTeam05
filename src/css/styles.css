@@ -8,6 +8,7 @@
 @import url('./components/link.css');
 @import url('./components/arrow-btn.css');
 @import url('./components/field.css');
+@import url('./components/backdrop.css');
 
 @import url('./sections/header.css');
 @import url('./sections/mobile-menu.css');

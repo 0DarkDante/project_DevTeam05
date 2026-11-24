@@ -1,2 +1,236 @@
-.book-modal-backdrop {
+.book-modal {
+  position: relative;
+  width: 100%;
+  max-width: 343px;
+  margin: auto;
+  padding: 64px 16px;
+  background-color: var(--color-background);
+  border-radius: var(--radius-large);
+  transform: scale(0.95);
+  transition: transform var(--transition);
+}
+
+.book-modal-backdrop.is--open .book-modal {
+  transform: scale(1);
+}
+
+.book-modal__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  color: var(--color-neutral-darkest);
+  background-color: transparent;
+  border: none;
+  transition: color var(--transition);
+}
+
+.book-modal__close:hover,
+.book-modal__close:focus-visible {
+  color: var(--color-bamboo);
+}
+
+.book-modal__close-icon {
+  width: 32px;
+  height: 32px;
+  fill: currentColor;
+}
+
+.book-modal__content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.book-modal__cover {
+  flex-shrink: 0;
+  width: 309px;
+  max-width: 100%;
+}
+
+.book-modal__image {
+  width: 100%;
+  aspect-ratio: 421 / 636;
+  object-fit: cover;
+  background-color: var(--color-neutral-darkest-5);
+  border-radius: 8px;
+}
+
+.book-modal__info {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  gap: 32px;
+  min-width: 0;
+}
+
+.book-modal__description {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.book-modal__name {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.book-modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.book-modal__quantity {
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+}
+
+.book-modal__qty-btn {
+  width: 32px;
+  height: 40px;
+  padding: 0;
+}
+
+.book-modal__qty-input {
+  width: 42px;
+  height: 40px;
+  padding: 0;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-neutral-darkest);
+  text-align: center;
+  background-color: var(--color-neutral-darkest-5);
+  border: 1px solid var(--color-neutral-darkest-15);
+  border-radius: 4px;
+  outline: none;
+  appearance: textfield;
+  transition: border-color var(--transition);
+}
+
+.book-modal__qty-input::-webkit-outer-spin-button,
+.book-modal__qty-input::-webkit-inner-spin-button {
+  margin: 0;
+  appearance: none;
+}
+
+.book-modal__qty-input:focus {
+  border-color: var(--color-neutral-darkest-60);
+}
+
+.book-modal__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.book-modal__action {
+  width: 100%;
+}
+
+.accordion {
+  border-bottom: 1px solid var(--color-neutral-darkest-15);
+}
+
+.accordion__item {
+  border-top: 1px solid var(--color-neutral-darkest-15);
+}
+
+.accordion__trigger {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 16px 0;
+  font-family: inherit;
+  color: var(--color-neutral-darkest);
+  text-align: left;
+  background-color: transparent;
+  border: none;
+  transition: color var(--transition);
+}
+
+.accordion__trigger:hover,
+.accordion__trigger:focus-visible {
+  color: var(--color-bamboo);
+}
+
+.accordion__icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  margin-left: auto;
+  fill: currentColor;
+  transition: transform var(--transition);
+}
+
+.accordion__item.is--active .accordion__icon {
+  transform: rotate(180deg);
+}
+
+.accordion__panel {
+  overflow: hidden;
+  transition-property: height, visibility;
+  transition-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.accordion__item.js-enabled .accordion__panel {
+  visibility: hidden;
+}
+
+.accordion__item.is--active .accordion__panel {
+  visibility: visible;
+}
+
+.accordion__body {
+  padding-bottom: 24px;
+}
+
+.book-modal .is--capitalize {
+  text-transform: capitalize;
+}
+
+@media only screen and (min-width: 768px) {
+  .book-modal {
+    max-width: 704px;
+    padding: 64px 32px;
+  }
+
+  .book-modal__content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .book-modal__form {
+    gap: 24px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .book-modal {
+    max-width: 1300px;
+    padding: 64px;
+  }
+
+  .book-modal__content {
+    max-width: 1092px;
+    margin: 0 auto;
+  }
+
+  .book-modal__form {
+    gap: 16px;
+  }
+
+  .book-modal__actions {
+    flex-direction: row;
+    max-width: 642px;
+  }
 }

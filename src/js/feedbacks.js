@@ -8,6 +8,7 @@ const feedbacksSwiper = new Swiper('.feedbacks__slider', {
   modules: [Navigation, Pagination],
   slidesPerView: 1,
   spaceBetween: 16,
+  grabCursor: true,
   pagination: {
     el: '.feedbacks__pagination',
     clickable: true,

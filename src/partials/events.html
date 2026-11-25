@@ -9,9 +9,9 @@
       </p>
     </div>
 
-    <div class="events-image-wrapper">
-      <ul class="events-list">
-        <li class="events-item active">
+    <div class="events-slider swiper">
+      <ul class="events-list swiper-wrapper">
+        <li class="events-item swiper-slide">
           <picture>
             <source
               srcset="
@@ -46,7 +46,7 @@
           </button>
         </li>
 
-        <li class="events-item">
+        <li class="events-item swiper-slide">
           <picture>
             <source
               srcset="
@@ -80,7 +80,7 @@
             </svg>
           </button>
         </li>
-        <li class="events-item">
+        <li class="events-item swiper-slide">
           <picture>
             <source
               srcset="
@@ -119,28 +119,12 @@
     </div>
 
     <div class="events-pagination">
-      <div class="events-dots">
-        <button
-          class="events-dot active"
-          type="button"
-          aria-label="Show event 1"
-        ></button>
-        <button
-          class="events-dot"
-          type="button"
-          aria-label="Show event 2"
-        ></button>
-        <button
-          class="events-dot"
-          type="button"
-          aria-label="Show event 3"
-        ></button>
-      </div>
+      <div class="events-dots"></div>
       <div class="events-arrows">
         <button
           class="arrow-btn events-arrow-left"
           type="button"
-          aria-label="Next slide"
+          aria-label="Previous slide"
         >
           <svg
             class="arrow-btn__icon"

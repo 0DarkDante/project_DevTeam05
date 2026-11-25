@@ -17,13 +17,10 @@
   margin-bottom: 24px;
 }
 
-.events-item {
-  display: none;
-}
-
-.events-item.active {
+.events-item.swiper-slide {
   display: flex;
   flex-direction: column;
+  height: auto;
 }
 
 .events-item .link {
@@ -70,20 +67,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .events-list {
-    display: flex;
-    gap: 24px;
-  }
-
-  .events-item,
-  .events-item.active {
-    width: calc((100% - 24px) / 2);
-  }
-
-  .events-dot:last-child {
-    display: none;
-  }
-
   .events-pagination {
     margin-top: 32px;
   }
@@ -98,7 +81,7 @@
     max-width: 560px;
   }
 
-  .events-list {
+  .events-slider {
     margin-bottom: 64px;
   }
 }

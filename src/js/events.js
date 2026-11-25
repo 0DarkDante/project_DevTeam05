@@ -1,63 +1,35 @@
-const eventsItem = document.querySelectorAll('.events-item');
-const eventsDots = document.querySelectorAll('.events-dot');
-const prevButton = document.querySelector('.events-arrow-left');
-const nextButton = document.querySelector('.events-arrow-right');
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
 
-let currentIndex = 0;
+import 'swiper/css';
 
-function getCardsToShow() {
-  if (window.innerWidth >= 1440) return 3;
-  if (window.innerWidth >= 768) return 2;
-  return 1;
-}
-
-function getMaxIndex() {
-  return Math.max(0, eventsItem.length - getCardsToShow());
-}
-
-function showEvent(index) {
-  currentIndex = Math.min(Math.max(index, 0), getMaxIndex());
-
-  eventsItem.forEach((item, i) => {
-    item.classList.toggle(
-      'active',
-      i >= currentIndex && i < currentIndex + getCardsToShow()
-    );
-  });
-
-  eventsDots.forEach((dot, i) => {
-    dot.classList.toggle('active', i === currentIndex);
-  });
-  updateArrows();
-}
-
-function updateArrows() {
-  prevButton.disabled = currentIndex === 0;
-  nextButton.disabled = currentIndex === getMaxIndex();
-}
-
-nextButton.addEventListener('click', () => {
-  if (currentIndex < getMaxIndex()) {
-    currentIndex++;
-    showEvent(currentIndex);
-  }
-});
-
-eventsDots.forEach((dot, i) => {
-  dot.addEventListener('click', () => {
-    showEvent(i);
-  });
-});
-
-prevButton.addEventListener('click', () => {
-  if (currentIndex > 0) {
-    currentIndex--;
-    showEvent(currentIndex);
-  }
-});
-
-showEvent(currentIndex);
-
-window.addEventListener('resize', () => {
-  showEvent(currentIndex);
+new Swiper('.events-slider', {
+  modules: [Navigation, Pagination],
+  slidesPerView: 1,
+  spaceBetween: 16,
+  grabCursor: true,
+  navigation: {
+    prevEl: '.events-arrow-left',
+    nextEl: '.events-arrow-right',
+  },
+  pagination: {
+    el: '.events-dots',
+    clickable: true,
+    bulletClass: 'events-dot',
+    bulletActiveClass: 'active',
+    modifierClass: 'events-dots-',
+    horizontalClass: 'events-dots-horizontal',
+    renderBullet: (index, className) =>
+      `<button class="${className}" type="button" aria-label="Show event ${index + 1}"></button>`,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 24,
+    },
+    1440: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+    },
+  },
 });

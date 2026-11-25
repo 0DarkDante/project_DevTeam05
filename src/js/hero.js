@@ -8,6 +8,7 @@ new Swiper('.hero-slider', {
   slidesPerView: 1,
   spaceBetween: 16,
   speed: 500,
+  grabCursor: true,
   navigation: {
     prevEl: '.hero-prev',
     nextEl: '.hero-next',

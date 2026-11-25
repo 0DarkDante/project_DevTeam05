@@ -11,6 +11,10 @@
   gap: 32px;
 }
 
+.footer-logo-link {
+  display: inline-flex;
+}
+
 .footer-nav-list {
   display: flex;
   align-items: center;

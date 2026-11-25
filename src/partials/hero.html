@@ -1,154 +1,146 @@
 <section class="hero" id="hero">
   <div class="container">
-    <div class="hero-slider">
-      <div class="hero-slide active" data-slide="0">
-        <picture class="hero-picture">
-          <source
-            media="(max-width: 767px)"
-            srcset="
-              ./img/hero/banner-1-mobile.webp 1x,
-              ./img/hero/banner-1-mobile@2x.webp 2x
-            "
-          />
-          <source
-            media="(max-width: 1157px)"
-            srcset="
-              ./img/hero/banner-1-tablet.webp 1x,
-              ./img/hero/banner-1-tablet@2x.webp 2x
-            "
-          />
-          <img
-            class="hero-image"
-            src="./img/hero/banner-1-desktop.webp"
-            srcset="
-              ./img/hero/banner-1-desktop.webp 1x,
-              ./img/hero/banner-1-desktop@2x.webp 2x
-            "
-            alt="Cozy reading space with a book and coffee"
-          />
-        </picture>
-        <div class="hero-content">
-          <h2 class="hero-title">Get 10% off your first order</h2>
-          <a class="hero-button" href="#books">Shop Now!</a>
-        </div>
-      </div>
-      <div class="hero-slide" data-slide="1">
-        <picture class="hero-picture">
-          <source
-            media="(max-width: 767px)"
-            srcset="
-              ./img/hero/banner-2-mobile.webp 1x,
-              ./img/hero/banner-2-mobile@2x.webp 2x
-            "
-          />
-          <source
-            media="(max-width: 1157px)"
-            srcset="
-              ./img/hero/banner-2-tablet.webp 1x,
-              ./img/hero/banner-2-tablet@2x.webp 2x
-            "
-          />
-          <img
-            class="hero-image"
-            src="./img/hero/banner-2-desktop.webp"
-            srcset="
-              ./img/hero/banner-2-desktop.webp 1x,
-              ./img/hero/banner-2-desktop@2x.webp 2x
-            "
-            alt="Books and glasses"
-          />
-        </picture>
-        <div class="hero-content">
-          <h2 class="hero-title">Save 15% on some books</h2>
-          <a class="hero-button" href="#books">Shop Now!</a>
-        </div>
-      </div>
-      <div class="hero-slide" data-slide="2">
-        <picture class="hero-picture">
-          <source
-            media="(max-width: 767px)"
-            srcset="
-              ./img/hero/banner-3-mobile.webp 1x,
-              ./img/hero/banner-3-mobile@2x.webp 2x
-            "
-          />
-          <source
-            media="(max-width: 1157px)"
-            srcset="
-              ./img/hero/banner-3-tablet.webp 1x,
-              ./img/hero/banner-3-tablet@2x.webp 2x
-            "
-          />
-          <img
-            class="hero-image"
-            src="./img/hero/banner-3-desktop.webp"
-            srcset="
-              ./img/hero/banner-3-desktop.webp 1x,
-              ./img/hero/banner-3-desktop@2x.webp 2x
-            "
-            alt="Books on a bookshelf"
-          />
-        </picture>
-        <div class="hero-content">
-          <h2 class="hero-title">Summer Sale! Up to -40% discounts</h2>
-          <a class="hero-button" href="#books">Shop Now!</a>
-        </div>
-      </div>
-      <div class="hero-slide" data-slide="3">
-        <picture class="hero-picture">
-          <source
-            media="(max-width: 767px)"
-            srcset="
-              ./img/hero/banner-4-mobile.webp 1x,
-              ./img/hero/banner-4-mobile@2x.webp 2x
-            "
-          />
-          <source
-            media="(max-width: 1157px)"
-            srcset="
-              ./img/hero/banner-4-tablet.webp 1x,
-              ./img/hero/banner-4-tablet@2x.webp 2x
-            "
-          />
-          <img
-            class="hero-image"
-            src="./img/hero/banner-4-desktop.webp"
-            srcset="
-              ./img/hero/banner-4-desktop.webp 1x,
-              ./img/hero/banner-4-desktop@2x.webp 2x
-            "
-            alt="Spring bestseller books"
-          />
-        </picture>
-        <div class="hero-content">
-          <h2 class="hero-title">
-            Last chance to buy our spring bestsellers
-          </h2>
-          <a class="hero-button" href="#books">Shop Now!</a>
-        </div>
-      </div>
+    <div class="hero-slider swiper">
+      <ul class="hero-list swiper-wrapper">
+        <li class="hero-slide swiper-slide">
+          <picture class="hero-picture">
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                ./img/hero/banner-1-desktop.webp    1x,
+                ./img/hero/banner-1-desktop@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/hero/banner-1-tablet.webp    1x,
+                ./img/hero/banner-1-tablet@2x.webp 2x
+              "
+            />
+            <img
+              class="hero-image"
+              src="./img/hero/banner-1-mobile.webp"
+              srcset="
+                ./img/hero/banner-1-mobile.webp    1x,
+                ./img/hero/banner-1-mobile@2x.webp 2x
+              "
+              alt="Cozy reading space with a book and coffee"
+            />
+          </picture>
+          <div class="hero-content">
+            <h2 class="hero-title">Get 10% off your first order</h2>
+            <a class="hero-button" href="#books">Shop Now!</a>
+          </div>
+        </li>
+        <li class="hero-slide swiper-slide">
+          <picture class="hero-picture">
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                ./img/hero/banner-2-desktop.webp    1x,
+                ./img/hero/banner-2-desktop@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/hero/banner-2-tablet.webp    1x,
+                ./img/hero/banner-2-tablet@2x.webp 2x
+              "
+            />
+            <img
+              class="hero-image"
+              src="./img/hero/banner-2-mobile.webp"
+              srcset="
+                ./img/hero/banner-2-mobile.webp    1x,
+                ./img/hero/banner-2-mobile@2x.webp 2x
+              "
+              alt="Books and glasses"
+            />
+          </picture>
+          <div class="hero-content">
+            <h2 class="hero-title">Save 15% on some books</h2>
+            <a class="hero-button" href="#books">Shop Now!</a>
+          </div>
+        </li>
+        <li class="hero-slide swiper-slide">
+          <picture class="hero-picture">
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                ./img/hero/banner-3-desktop.webp    1x,
+                ./img/hero/banner-3-desktop@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/hero/banner-3-tablet.webp    1x,
+                ./img/hero/banner-3-tablet@2x.webp 2x
+              "
+            />
+            <img
+              class="hero-image"
+              src="./img/hero/banner-3-mobile.webp"
+              srcset="
+                ./img/hero/banner-3-mobile.webp    1x,
+                ./img/hero/banner-3-mobile@2x.webp 2x
+              "
+              alt="Books on a bookshelf"
+            />
+          </picture>
+          <div class="hero-content">
+            <h2 class="hero-title">Summer Sale! Up to -40% discounts</h2>
+            <a class="hero-button" href="#books">Shop Now!</a>
+          </div>
+        </li>
+        <li class="hero-slide swiper-slide">
+          <picture class="hero-picture">
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                ./img/hero/banner-4-desktop.webp    1x,
+                ./img/hero/banner-4-desktop@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/hero/banner-4-tablet.webp    1x,
+                ./img/hero/banner-4-tablet@2x.webp 2x
+              "
+            />
+            <img
+              class="hero-image"
+              src="./img/hero/banner-4-mobile.webp"
+              srcset="
+                ./img/hero/banner-4-mobile.webp    1x,
+                ./img/hero/banner-4-mobile@2x.webp 2x
+              "
+              alt="Spring bestseller books"
+            />
+          </picture>
+          <div class="hero-content">
+            <h2 class="hero-title">
+              Last chance to buy our spring bestsellers
+            </h2>
+            <a class="hero-button" href="#books">Shop Now!</a>
+          </div>
+        </li>
+      </ul>
     </div>
     <div class="hero-bottom">
-      <h1 class="hero-heading">
-        Discover Your Next Great Read Today!
-      </h1>
+      <h1 class="hero-heading">Discover Your Next Great Read Today!</h1>
       <div class="hero-controls">
-        <button
-          class="hero-prev"
-          type="button"
-          aria-label="Previous banner"
-        >
-          <svg class="hero-arrow" width="24" height="24">
-            <use href="/img/icons.svg#icon-arrow-left"></use>
+        <button class="hero-prev" type="button" aria-label="Previous banner">
+          <svg class="hero-arrow" width="24" height="24" aria-hidden="true">
+            <use href="./img/icons.svg#icon-arrow-left"></use>
           </svg>
         </button>
-        <button
-          class="hero-next"
-          type="button"
-          aria-label="Next banner"
-        >
-          <svg class="hero-arrow" width="24" height="24">
-            <use href="/img/icons.svg#icon-arrow-right"></use>
+        <button class="hero-next" type="button" aria-label="Next banner">
+          <svg class="hero-arrow" width="24" height="24" aria-hidden="true">
+            <use href="./img/icons.svg#icon-arrow-right"></use>
           </svg>
         </button>
       </div>

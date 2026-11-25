@@ -125,30 +125,6 @@
   margin-left: auto;
 }
 
-.feedbacks__btn,
-.feedbacks__btn.swiper-button-prev,
-.feedbacks__btn.swiper-button-next {
-  position: static;
-  top: auto;
-  bottom: auto;
-  left: auto;
-  right: auto;
-  margin: 0;
-  transform: none;
-}
-
-.feedbacks__btn::before,
-.feedbacks__btn::after,
-.feedbacks__btn.swiper-button-prev::after,
-.feedbacks__btn.swiper-button-next::after {
-  content: none;
-  display: none;
-}
-
-.feedbacks__btn.swiper-button-disabled {
-  pointer-events: none;
-}
-
 @media (min-width: 768px) {
   .feedbacks {
     padding-block: 80px;

@@ -1,12 +1,8 @@
-.contact-modal-backdrop {
-  justify-content: center;
-  align-items: center;
-}
-
 .contact-modal {
   position: relative;
   width: 100%;
   max-width: 343px;
+  margin: auto;
   padding: 56px 20px 40px;
   background-color: var(--color-background);
   border-radius: 16px;
@@ -67,14 +63,11 @@
   color: var(--color-error);
 }
 
-.contact-form
-  .field__input:invalid:not(:placeholder-shown)::placeholder {
+.contact-form .field__input:invalid:not(:placeholder-shown)::placeholder {
   color: var(--color-error);
 }
 
-.contact-form
-  .field__input:invalid:not(:placeholder-shown)
-  + .field__error {
+.contact-form .field__input:invalid:not(:placeholder-shown) + .field__error {
   display: block;
 }
 

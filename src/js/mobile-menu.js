@@ -17,7 +17,7 @@ if (mobileMenu) {
   navLinks.forEach(link => {
     link.addEventListener('click', closeMenu);
   });
-  document.addEventListener('keydown', (e) => {
+  document.addEventListener('keydown', e => {
     if (e.key === 'Escape' && mobileMenu.classList.contains('is-open')) {
       closeMenu();
     }

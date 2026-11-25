@@ -12,16 +12,16 @@
 }
 
 .footer-nav-list {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 32px;
 }
-.footer-nav-link{
+.footer-nav-link {
   transition: color 300ms ease;
 }
-.footer-nav-link:hover{
+.footer-nav-link:hover {
   color: var(--color-white);
 }
 .footer-header {
@@ -34,7 +34,7 @@
   margin-bottom: 80px;
 }
 
-.form-signUp { 
+.form-signUp {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,7 +63,7 @@
   outline: none;
 }
 
-.form-signUp-input::placeholder{
+.form-signUp-input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -86,7 +86,7 @@
   background-color: var(--color-bamboo-light);
   transition: background-color 300ms ease;
 }
-.form-signUp-btn:hover{
+.form-signUp-btn:hover {
   background-color: var(--color-white);
 }
 
@@ -102,28 +102,28 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .footer-nav {
-      display: block;
-      margin-bottom: 32px;
-    }
-    .footer-logo {
-      text-align: center;
-      margin-bottom: 32px;
-    }
-    .footer-nav-list {
-      align-items: center;
-      justify-content: center;
-      flex-direction: row;
-      margin-bottom: 32px;   
-    }
-    .footer-form {
-      width: 400px;
-      margin: 0 auto;
-      margin-bottom: 80px;
-    }
-    .form-signUp {
-      justify-content: start;
-    }
+  .footer-nav {
+    display: block;
+    margin-bottom: 32px;
+  }
+  .footer-logo {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .footer-nav-list {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 32px;
+  }
+  .footer-form {
+    width: 400px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+  .form-signUp {
+    justify-content: start;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -144,7 +144,7 @@
     width: 324px;
     margin-bottom: 0;
   }
-  .footer-nav-list{
+  .footer-nav-list {
     margin-bottom: 0px;
     align-items: center;
     justify-content: space-between;
@@ -159,7 +159,7 @@
     width: 100%;
     justify-content: space-between;
   }
-  .form-signUp-input{
+  .form-signUp-input {
     width: 278px;
   }
 }

@@ -11,27 +11,42 @@ function getCardsToShow() {
   return 1;
 }
 
+function getMaxIndex() {
+  return Math.max(0, eventsItem.length - getCardsToShow());
+}
+
 function showEvent(index) {
+  currentIndex = Math.min(Math.max(index, 0), getMaxIndex());
+
   eventsItem.forEach((item, i) => {
-    item.classList.toggle('active', i >= index && i < index + getCardsToShow());
+    item.classList.toggle(
+      'active',
+      i >= currentIndex && i < currentIndex + getCardsToShow()
+    );
   });
 
   eventsDots.forEach((dot, i) => {
-    dot.classList.toggle('active', i === index);
+    dot.classList.toggle('active', i === currentIndex);
   });
   updateArrows();
 }
 
 function updateArrows() {
   prevButton.disabled = currentIndex === 0;
-  nextButton.disabled = currentIndex === eventsItem.length - getCardsToShow();
+  nextButton.disabled = currentIndex === getMaxIndex();
 }
 
 nextButton.addEventListener('click', () => {
-  if (currentIndex < eventsItem.length - getCardsToShow()) {
+  if (currentIndex < getMaxIndex()) {
     currentIndex++;
     showEvent(currentIndex);
   }
+});
+
+eventsDots.forEach((dot, i) => {
+  dot.addEventListener('click', () => {
+    showEvent(i);
+  });
 });
 
 prevButton.addEventListener('click', () => {

@@ -10,7 +10,10 @@
   visibility: hidden;
   pointer-events: none;
   transform: translateY(-10px);
-  transition: opacity 0.25s ease, visibility 0.25s ease, transform 0.25s ease;;
+  transition:
+    opacity 0.25s ease,
+    visibility 0.25s ease,
+    transform 0.25s ease;
 }
 
 .mobile-menu.is-open {
